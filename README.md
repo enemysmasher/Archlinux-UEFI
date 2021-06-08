@@ -79,13 +79,12 @@ root@archiso ~ # iwctl
 ##### **Przygotowanie dysku:**
 ##### GPT (UEFI z GPT)
 
-| Needed | Partition | Partition type       | Mount point   |
-|--------|-----------|----------------------|---------------|
-| ✔️      | /dev/sdXY | EFI system partition | /mnt/boot/efi |
-| ❌      | /dev/sdXY | Linux swap           | -             |
-| ✔️      | /dev/sdXY | Linux                | /mnt          |
-| ❌      | /dev/sdXY | Linux                | /mnt/home     |
- 
+| Potrzebny | Partycja  | Typ partycji         | Punkt montażu | Flagi      |
+|-----------|-----------|----------------------|---------------|------------|
+| ✔️        | /dev/sdXY | EFI system partition | /mnt/boot/efi |            |       
+| ✔️        | /dev/sdXY | Linux                | /mnt          |            |
+| ❌        | /dev/sdXY | Linux                | /mnt/home     |            |
+  
 ##### Przy tym kroku należy postępować ostrożnie ponieważ można przypadkiem usunąć partycje.
   
 ##### Na początek musimy odnaleźć dysk, na którym nasz system ma być zainstalowany.
