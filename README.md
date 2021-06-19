@@ -49,7 +49,7 @@
   
 #### Arch Linux - instalacja i konfiguracja
   
-<img src="https://user-images.githubusercontent.com/43359077/122649191-0dc9e200-d12d-11eb-8bf0-b28c10b837ec.png" alt="live_boot" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122649191-0dc9e200-d12d-11eb-8bf0-b28c10b837ec.png" alt="live_boot" width="1000"/>
   
 ###### [Do góry](#spis-treści)
 #### Przed instalacją:  
@@ -80,7 +80,7 @@ root@archiso ~ # iwctl
 # ping -c 5 google.pl
 ```
 ##### **Wynik podobny do tego poniżej oznacza, że połączenie działa**
-<img src="https://user-images.githubusercontent.com/43359077/120820318-b7697a80-c554-11eb-8004-0cdd49df8a41.png" alt="ping" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122655784-76c55000-d155-11eb-91e1-b940059b5a93.png" alt="ping" width="1000"/>
 
 ###### [Do góry](#spis-treści)
 -----
@@ -94,11 +94,11 @@ root@archiso ~ # iwctl
 # setfont Lat2-Terminus16
 ```
 ###### **przed:**
-  <img src="https://user-images.githubusercontent.com/43359077/120823058-4d9ea000-c557-11eb-9375-418e847a4cf4.png" alt="setfont" width="800"/>
+  <img src="https://user-images.githubusercontent.com/43359077/122655751-306ff100-d155-11eb-819a-b2e6589c509b.png" alt="setfont" width="1000"/>
 
 ###### **po:**
-  <img src="https://user-images.githubusercontent.com/43359077/120829346-96f1ee00-c55d-11eb-826a-3fe5b2bf2d40.png" alt="setfont" width="800"/>
-  
+  <img src="https://user-images.githubusercontent.com/43359077/122655760-441b5780-d155-11eb-8701-f840875c574b.png" alt="setfont" width="1000"/>
+
 ###### [Do góry](#spis-treści)
 -----
 
@@ -117,7 +117,7 @@ root@archiso ~ # iwctl
   
 #### 5. Partycjonuj dyski
 ##### W przypadku, gdy dysk twardy jest nowy, tak jak w przypadku maszyny wirtualnej lub chcesz ponownie podzielić dysk na partycje, uruchom to polecenie, aby utworzyć nową tablicę partycji.
-##### **Wipefs** to polecenie czyści tablice partycji, kasuje wszystko z dysku. Potem **cfdisk** i wybierasz **dos**. Potem lecisz już z instalacją Archa.
+##### **Wipefs** to polecenie czyści tablice partycji, kasuje wszystko z dysku. Potem **cfdisk** i wybierasz **gpt**. Potem lecisz już z instalacją Archa.
 
 ##### **Przygotowanie dysku:**
 ##### GPT (UEFI)
@@ -138,12 +138,12 @@ root@archiso ~ # iwctl
 ```markdown
 # fdisk -l
 ```
-<img src="https://user-images.githubusercontent.com/43359077/122652987-07923080-d142-11eb-8fc1-dff96c619032.png" alt="fdisk" width="10000"/>
+<img src="https://user-images.githubusercontent.com/43359077/122652987-07923080-d142-11eb-8fc1-dff96c619032.png" alt="fdisk" width="1000"/>
 
 ```markdown
 # wipefs -a /dev/sda 
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120843200-1d163080-c56e-11eb-82af-1ee05d1dd587.png" alt="wipefs" width="10000"/>
+<img src="https://user-images.githubusercontent.com/43359077/122655841-01a64a80-d156-11eb-9893-ae1868ffffd6.png" alt="wipefs" width="1000"/>
 
 ##### **Graficzny (zalecany dla początkujących)**
 ##### cfdisk – szybciej, wygodniej, lepiej?
@@ -166,62 +166,44 @@ root@archiso ~ # iwctl
 ##### Wpisz rozmiar partycji w MB (512MiB) i naciśnij klawisz Enter
 <img src="https://user-images.githubusercontent.com/43359077/122653139-0e6d7300-d143-11eb-83ea-e91632d6c3be.png" alt="efi" width="1000"/>
   
- ##### Wybierz opcję Type z dolnego menu
+ ##### Wybierz opcję **Type** z dolnego menu i naciśnij klawisz Enter
 <img src="https://user-images.githubusercontent.com/43359077/122653197-673d0b80-d143-11eb-8301-de253d8b56ed.png" alt="type" width="1000"/>
 
 ##### wybierz typ partycji EFI System, jak pokazano na poniższych zrzutach ekranu.
 <img src="https://user-images.githubusercontent.com/43359077/122653199-6a37fc00-d143-11eb-89a2-00ae9b35564b.png" alt="efi" width="1000"/>
 
+##### Wybierz **NOWY** i utwórz nową partycję. 
+<img src="https://user-images.githubusercontent.com/43359077/122655988-28b14c00-d157-11eb-965b-004285d14c1f.png" alt="nowy" width="1000"/>
+
 ##### Przykład: Wybierz rozmiar **40GB**. Chcemy główną, zatem wciskamy enter.
-<img src="https://user-images.githubusercontent.com/43359077/122653333-1f6ab400-d144-11eb-8d01-0c2d31e4fad4.png" alt="partycja_40GB" width="1000"/>
-  
-  ![2021-06-19_200124](https://user-images.githubusercontent.com/43359077/122653333-1f6ab400-d144-11eb-8d01-0c2d31e4fad4.png)
+<img src="https://user-images.githubusercontent.com/43359077/122656070-c60c8000-d157-11eb-9c36-065b3feedeea.png" alt="partycja_40GB" width="1000"/>
 
-  
-##### Wybierz NOWY i utwórz nową partycję.
+##### Wybierz **NOWY** i utwórz nową partycję.
+<img src="https://user-images.githubusercontent.com/43359077/122656307-9e1e1c00-d159-11eb-9850-de03b5087b90.png" alt="nowy" width="1000"/>
 
-  
-  ![2021-06-19_195907](https://user-images.githubusercontent.com/43359077/122653274-e6cada80-d143-11eb-9a98-14183a71602d.png)
-
-  ![2021-06-19_195958](https://user-images.githubusercontent.com/43359077/122653281-eb8f8e80-d143-11eb-8736-165d5af3daea.png)
-
-  
-##### wybierz podstawowy
-<img src="https://user-images.githubusercontent.com/43359077/120857891-42149e80-c582-11eb-8f9a-3bfd213a9908.png" alt="podstawowy" width="800"/> 
-  
-##### wybierz **Bootable** (flaga rozruchowa).
-<img src="https://user-images.githubusercontent.com/43359077/120857905-4640bc00-c582-11eb-886a-9493169eeba4.png" alt="boot" width="800"/> 
-  
-##### Flaga boot jest potrzebna dla linux.
-<img src="https://user-images.githubusercontent.com/43359077/120867570-7c863780-c592-11eb-80d0-98f55e59d413.png" alt="flaga_bootowalna" width="800"/>
-
-##### Pozwoli ci to na utworzenie kolejnych, dodatkowych partycji.
-##### Jeśli chcesz utworzyć więcej partycji to skonfiguruj partycję **sda2** jako **podstawowy** **(Primary)**, podziel ją w/g uznania a następnie zapisz nowy partycji dysku wybierając **(Write)**.
-<img src="https://user-images.githubusercontent.com/43359077/120871900-587c2380-c59d-11eb-8c47-f3c76ab3d379.png" alt="dodatkowy_nowy" width="800"/>
-  
 ##### Naciśnij klawisz Enter, aby zaakceptować domyślny.
-<img src="https://user-images.githubusercontent.com/43359077/120871905-5ade7d80-c59d-11eb-8375-4f3cbeed3af5.png" alt="partycja_960GB" width="800"/>
-  
-##### wybierz podstawowy
-<img src="https://user-images.githubusercontent.com/43359077/120871910-5d40d780-c59d-11eb-9564-b977d68f0ad7.png" alt="podstawowy" width="800"/>
-  
+<img src="https://user-images.githubusercontent.com/43359077/122656386-5f3c9600-d15a-11eb-914a-1d003566f343.png" alt="partycja_960GB" width="1000"/> 
+
 ##### Skończone. Partycja utworzona w miły i przyjemny sposób. Możemy zapisać teraz zmiany używając opcji **Write**.
-<img src="https://user-images.githubusercontent.com/43359077/120871915-5fa33180-c59d-11eb-8c5e-728e60fb7d61.png" alt="write" width="800"/>
-  
+<img src="https://user-images.githubusercontent.com/43359077/122656553-dde60300-d15b-11eb-95a5-3ca93294bcdc.png" alt="write" width="1000"/>
+
 ##### Wpisz **yes**, aby zatwierdzić zmiany w strukturze dysku, a następnie naciśnij klawisz Enter.
-<img src="https://user-images.githubusercontent.com/43359077/120871918-616cf500-c59d-11eb-8a20-763592c48951.png" alt="yes" width="800"/>
-  
+<img src="https://user-images.githubusercontent.com/43359077/122656570-0110b280-d15c-11eb-870a-51e84530fbe7.png" alt="yes" width="1000"/>
+
 ##### Przed ostatecznym zapisem system poprosi o potwierdzenie. Aby wyjść bez zapisywania zmian należy wybrać Zakończ.
 ##### cfdisk zapisze zmiany na wirtualnym napędzie dysków. cfdisk wyświetli następujący komunikat diagnostyczny:
 ##### Po zakończeniu działań programu wyjdź wybierając **Quit**.
 ##### Tablica partycji zostałą zmodyfikowana.
-<img src="https://user-images.githubusercontent.com/43359077/120871922-6336b880-c59d-11eb-9713-c4356958c52f.png" alt="quit" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122656591-492fd500-d15c-11eb-88cd-55838e22943d.png" alt="quit" width="800"/>
 
 ##### Jak widać na dysku są 3 partycje.
 ```markdown
 # fdisk -l
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120871970-882b2b80-c59d-11eb-8d3c-0ac5a6420ef1.png" alt="fdisk-l" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122656614-85fbcc00-d15c-11eb-8218-8ad5f1d83c2c.png" alt="fdisk-l" width="1000
+  
+  ![2021-06-19_200438]()
+
 
 ###### [Do góry](#spis-treści)
 -----
