@@ -71,7 +71,7 @@ root@archiso ~ # iwctl
 ```yaml
 [iwd]# exit
 ```
-###### [Do góry](#spis-tre%C5%9Bci)
+###### [Do góry](#spis-treści)
 -----  
   
 #### 2. Połącz się z Internetem
@@ -98,7 +98,7 @@ root@archiso ~ # iwctl
 ###### **po:**
   <img src="https://user-images.githubusercontent.com/43359077/120829346-96f1ee00-c55d-11eb-826a-3fe5b2bf2d40.png" alt="setfont" width="800"/>
   
-###### [Do góry](#spis-tre%C5%9Bci)
+###### [Do góry](#spis-treści)
 -----
 
 #### 4. Zaktualizuj systemowy zegar
@@ -111,7 +111,7 @@ root@archiso ~ # iwctl
 ```
 <img src="https://user-images.githubusercontent.com/43359077/120824727-01ecf600-c559-11eb-8dc6-e117247fafd2.png" alt="timedatectl" width="800"/>
   
-###### [Do góry](#spis-tre%C5%9Bci)
+###### [Do góry](#spis-treści)
 -----
   
 #### 5. Partycjonuj dyski
@@ -198,7 +198,7 @@ root@archiso ~ # iwctl
 ```
 <img src="https://user-images.githubusercontent.com/43359077/120871970-882b2b80-c59d-11eb-8d3c-0ac5a6420ef1.png" alt="fdisk-l" width="800"/>
 
-###### [Do góry](#spis-tre%C5%9Bci)
+###### [Do góry](#spis-treści)
 -----
   
 ##### Jesteśmy gotowi, by przejść powoli do instalacji bazowego systemu. Nowe partycje należy sformatować za pomocą systemu plików, zanim będzie można ich używać. Możesz to zrobić za pomocą odpowiedniego polecenia mkfs.
@@ -210,7 +210,7 @@ root@archiso ~ # iwctl
 ```
 <img src="https://user-images.githubusercontent.com/43359077/120876910-e531dc00-c5b3-11eb-990a-6479a4cf3a4f.png" alt="mkfs" width="800"/>
   
-###### [Do góry](#spis-tre%C5%9Bci)
+###### [Do góry](#spis-treści)
 -----
 
 #### 7. Zamontuj system plików
@@ -228,7 +228,7 @@ root@archiso ~ # iwctl
 ```
 <img src="https://user-images.githubusercontent.com/43359077/120877278-fd0a5f80-c5b5-11eb-835b-1df822c4a560.png" alt="lsblk-f" width="800"/>
   
-###### [Do góry](#spis-tre%C5%9Bci)
+###### [Do góry](#spis-treści)
 -----
   
 #### 8. Instalacja systemu podstawowego
@@ -240,7 +240,7 @@ root@archiso ~ # iwctl
 ##### Przy pytaniu, jakie pakiety zainstalować wcisnąć ENTER. Poczekaj chwilę, aż się zakończy.
 <img src="https://user-images.githubusercontent.com/43359077/120879205-0bf70f00-c5c2-11eb-9aaa-b06891f0f422.png" alt="pacstrap" width="800"/>
 
-###### [Do góry](#spis-tre%C5%9Bci)
+###### [Do góry](#spis-treści)
 -----
   
 #### 9. Generowanie fstab
@@ -253,7 +253,7 @@ root@archiso ~ # iwctl
 ```
 <img src="https://user-images.githubusercontent.com/43359077/120879502-13b7b300-c5c4-11eb-9d42-d3f8b5de4a62.png" alt="fstab" width="800"/>
  
-###### [Do góry](#spis-tre%C5%9Bci)
+###### [Do góry](#spis-treści)
 -----
 
 #### 10. Wejdź przez chroot do nowego systemu
@@ -262,7 +262,7 @@ root@archiso ~ # iwctl
 ``` 
 <img src="https://user-images.githubusercontent.com/43359077/120879922-24b5f380-c5c7-11eb-9f8b-b1336162493c.png" alt="arch-chroot" width="800"/>
 
-###### [Do góry](#spis-tre%C5%9Bci)
+###### [Do góry](#spis-treści)
 -----
 
 #### 11. Strefa czasowa - Ustaw czas
