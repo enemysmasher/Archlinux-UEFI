@@ -160,8 +160,12 @@ root@archiso ~ # iwctl
 ##### Osobiście zalecam **minimalne** granice rozmiaru na **/** ustalić w przedziale **10 - 50GB**, oraz całą resztę dostępnej przestrzeni na **/home**.
 ##### Teraz zobaczysz tabelę partycji w ten sposób:
 ##### Zobacz dostępne wolne miejsce. Tutaj mamy 1000GB. Wybierz **NOWY** i utwórz nową partycję.
-<img src="https://user-images.githubusercontent.com/43359077/120857870-3aed9080-c582-11eb-8b7f-b93bd4cbb286.png" alt="nowy" width="800"/>
- 
+<img src="https://user-images.githubusercontent.com/43359077/122652782-e715a680-d140-11eb-9ec0-4efea38c00ed.png" alt="nowy" width="1000"/>
+
+##### Wpisz rozmiar partycji w MB (512MiB) i naciśnij klawisz Enter
+  
+  
+  
 ##### Przykład: Wybierz rozmiar **40GB**. Chcemy główną, zatem wciskamy enter.
 <img src="https://user-images.githubusercontent.com/43359077/120857878-3d4fea80-c582-11eb-81c8-b5fa3f9e128b.png" alt="partycja_40GB" width="800"/>
   
