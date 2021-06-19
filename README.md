@@ -121,13 +121,16 @@ root@archiso ~ # iwctl
 ##### **Przygotowanie dysku:**
 ##### GPT (UEFI)
 
-| Potrzebny | Partycja  | Typ partycji           | Punkt montażu | Flagi      |
-|-----------|-----------|------------------------|---------------|------------|
-| ✔️        | /dev/sdXY | Partycja systemowa EFI | /mnt/efi      | -          |
-| ❌        | /dev/sdXY | Linux swap             | -             | -          |
-| ✔️        | /dev/sdXY | Linux                  | /mnt          | -          |
-| ❌        | /dev/sdXY | Linux                  | /mnt/home     | -          |
-
+| Potrzebny | Partycja  | Typ partycji           | Punkt montażu | Rozmiar    | Flagi      |
+|-----------|-----------|------------------------|---------------|------------|------------|
+| ✔️        | /dev/sdXY | Partycja systemowa EFI | /mnt/efi      | 260-512MiB | -          |
+| ❌        | /dev/sdXY | Linux swap             | -             |            | -          |
+| ✔️        | /dev/sdXY | Linux                  | /mnt          |            | -          |
+| ❌        | /dev/sdXY | Linux                  | /mnt/home     |            | -          |
+  
+##### System EFI
+##### Co najmniej: 260MiB
+##### Zalecane   : 512MiB
 ##### Przy tym kroku należy postępować ostrożnie ponieważ można przypadkiem usunąć partycje.
   
 ##### Na początek musimy odnaleźć dysk, na którym nasz system ma być zainstalowany.
@@ -193,7 +196,7 @@ root@archiso ~ # iwctl
 ##### Tablica partycji zostałą zmodyfikowana.
 <img src="https://user-images.githubusercontent.com/43359077/120871922-6336b880-c59d-11eb-9713-c4356958c52f.png" alt="quit" width="800"/>
 
-##### Jak widać na dysku są 2 partycje.
+##### Jak widać na dysku są 3 partycje.
 ```markdown
 # fdisk -l
 ```
@@ -206,8 +209,9 @@ root@archiso ~ # iwctl
 #### 6. Formatowanie partycji BIOS with MBR
 ##### Pozostałe dwie partycje można sformatować w dowolnym systemie plików Linux. Polecam użycie ext4.
 ```markdown
-# mkfs.ext4 -L root /dev/sda1
-# mkfs.ext4 -L home /dev/sda2
+# mkfs.fat -F32 -n EFI /dev/sda1
+# mkfs.ext4 -L root /dev/sda2
+# mkfs.ext4 -L home /dev/sda3
 ```
 <img src="https://user-images.githubusercontent.com/43359077/120876910-e531dc00-c5b3-11eb-990a-6479a4cf3a4f.png" alt="mkfs" width="800"/>
   
@@ -217,9 +221,11 @@ root@archiso ~ # iwctl
 #### 7. Zamontuj system plików
 ##### Teraz nadszedł czas na zamontowanie tych partycji:
 ```markdown
-# mount /dev/sda1 /mnt
+# mkdir /mnt/efi
+# mount /dev/sda1 /mnt/efi
+# mount /dev/sda2 /mnt
 # mkdir /mnt/home
-# mount /dev/sda2 /mnt/home
+# mount /dev/sda3 /mnt/home
 ```
 <img src="https://user-images.githubusercontent.com/43359077/120877202-7e152700-c5b5-11eb-958c-4cf2f534b8fd.png" alt="mount" width="800"/>
 
