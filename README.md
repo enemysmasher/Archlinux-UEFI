@@ -228,13 +228,13 @@ root@archiso ~ # iwctl
 # mkdir /mnt/home
 # mount /dev/sda3 /mnt/home
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120877202-7e152700-c5b5-11eb-958c-4cf2f534b8fd.png" alt="mount" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122657025-18519f00-d160-11eb-8d35-ed2d6fb46758.png" alt="mount" width="1000"/>
 
 ##### Sprawdź punkty montażowe, czy zostały pomyślnie utworzone.
 ```markdown
 # lsblk -f
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120877278-fd0a5f80-c5b5-11eb-835b-1df822c4a560.png" alt="lsblk-f" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122657046-34554080-d160-11eb-9205-459975c3a495.png" alt="lsblk-f" width="1000"/>
   
 ###### [Do góry](#spis-treści)
 -----
@@ -245,9 +245,12 @@ root@archiso ~ # iwctl
 ```markdown
 # pacstrap -i /mnt base base-devel bash-completion linux linux-firmware linux-headers nano dhcpcd
 ```
+##### Dodałem Nano edytor, ponieważ trzeba edytować niektóre pliki po instalacji.
+ 
 ##### Przy pytaniu, jakie pakiety zainstalować wcisnąć ENTER. Poczekaj chwilę, aż się zakończy.
-<img src="https://user-images.githubusercontent.com/43359077/120879205-0bf70f00-c5c2-11eb-9aaa-b06891f0f422.png" alt="pacstrap" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122657138-120ff280-d161-11eb-9f33-8f4e144821d1.png" alt="pacstrap" width="1000"/>
 
+##### To zajmie trochę czasu, aby pobrać i zainstalować te pakiety. Jeśli pliki do pobrania zostanie przerwane, nie trzeba panikować. Możesz uruchomić powyższe polecenie jeszcze raz i wznowić pobieranie.
 ###### [Do góry](#spis-treści)
 -----
   
