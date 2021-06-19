@@ -23,7 +23,7 @@
   * [**3. Układ klawiatury**](#3-układ-klawiatury)
   * [**4. Zaktualizuj systemowy zegar**](#4-zaktualizuj-systemowy-zegar)
   * [**5. Partycjonuj dyski**](#5-partycjonuj-dyski)
-  * [**6. Formatowanie partycji BIOS with MBR**](#6-formatowanie-partycji-bios-with-mbr)
+  * [**6. Formatowanie partycji UEFI with GPT**](#6-formatowanie-partycji-uefi-with-gpt)
   * [**7. Zamontuj system plików**](#7-zamontuj-system-plików)
   * [**8. Instalacja systemu podstawowego**](#8-instalacja-systemu-podstawowego)
   * [**9. Generowanie fstab**](#9-generowanie-fstab)
