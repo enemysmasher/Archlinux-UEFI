@@ -161,16 +161,29 @@ root@archiso ~ # iwctl
 ##### Teraz zobaczysz tabelę partycji w ten sposób:
 ##### Zobacz dostępne wolne miejsce. Tutaj mamy 1000GB. Wybierz **NOWY** i utwórz nową partycję.
 <img src="https://user-images.githubusercontent.com/43359077/122652782-e715a680-d140-11eb-9ec0-4efea38c00ed.png" alt="nowy" width="1000"/>
-  
-  ![2021-06-19_195713](https://user-images.githubusercontent.com/43359077/122653095-c9494100-d142-11eb-9cea-a2f0e224b2c6.png)
-
 
 ##### Wpisz rozmiar partycji w MB (512MiB) i naciśnij klawisz Enter
+<img src="https://user-images.githubusercontent.com/43359077/122653139-0e6d7300-d143-11eb-83ea-e91632d6c3be.png" alt="efi" width="1000"/>
   
-  
-  
+ ##### Wybierz opcję Type z dolnego menu
+<img src="https://user-images.githubusercontent.com/43359077/122653197-673d0b80-d143-11eb-8301-de253d8b56ed.png" alt="type" width="1000"/>
+
+##### wybierz typ partycji EFI System, jak pokazano na poniższych zrzutach ekranu.
+<img src="https://user-images.githubusercontent.com/43359077/122653199-6a37fc00-d143-11eb-89a2-00ae9b35564b.png" alt="efi" width="1000"/>
+
 ##### Przykład: Wybierz rozmiar **40GB**. Chcemy główną, zatem wciskamy enter.
-<img src="https://user-images.githubusercontent.com/43359077/120857878-3d4fea80-c582-11eb-81c8-b5fa3f9e128b.png" alt="partycja_40GB" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122653333-1f6ab400-d144-11eb-8d01-0c2d31e4fad4.png" alt="partycja_40GB" width="1000"/>
+  
+  ![2021-06-19_200124](https://user-images.githubusercontent.com/43359077/122653333-1f6ab400-d144-11eb-8d01-0c2d31e4fad4.png)
+
+  
+##### Wybierz NOWY i utwórz nową partycję.
+
+  
+  ![2021-06-19_195907](https://user-images.githubusercontent.com/43359077/122653274-e6cada80-d143-11eb-9a98-14183a71602d.png)
+
+  ![2021-06-19_195958](https://user-images.githubusercontent.com/43359077/122653281-eb8f8e80-d143-11eb-8736-165d5af3daea.png)
+
   
 ##### wybierz podstawowy
 <img src="https://user-images.githubusercontent.com/43359077/120857891-42149e80-c582-11eb-8f9a-3bfd213a9908.png" alt="podstawowy" width="800"/> 
