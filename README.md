@@ -81,7 +81,7 @@ root@archiso ~ # iwctl
 ##### **Wynik podobny do tego poniżej oznacza, że połączenie działa**
 <img src="https://user-images.githubusercontent.com/43359077/120820318-b7697a80-c554-11eb-8004-0cdd49df8a41.png" alt="ping" width="800"/>
 
-###### [Do góry](#spis-tre%C5%9Bci)
+###### [Do góry](#spis-treści)
 -----
 
 #### 3. Układ klawiatury
