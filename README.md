@@ -262,8 +262,8 @@ root@archiso ~ # iwctl
 ```markdown
 # genfstab -U -p /mnt /mnt/etc/fstab
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120879502-13b7b300-c5c4-11eb-9d42-d3f8b5de4a62.png" alt="fstab" width="800"/>
- 
+<img src="https://user-images.githubusercontent.com/43359077/122658126-e47b7700-d169-11eb-9f61-ed8d00e0d75e.png" alt="fstab" width="800"/>
+  
 ###### [Do góry](#spis-treści)
 -----
 
