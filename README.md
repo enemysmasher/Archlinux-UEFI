@@ -109,8 +109,8 @@ root@archiso ~ # iwctl
 ```markdown
 # timedatectl status
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120824727-01ecf600-c559-11eb-8dc6-e117247fafd2.png" alt="timedatectl" width="800"/>
-  
+<img src="https://user-images.githubusercontent.com/43359077/122652939-d74a9200-d141-11eb-9214-ee8d884cb948.png" alt="timedatectl" width="1000"/>
+
 ###### [Do góry](#spis-treści)
 -----
   
@@ -137,12 +137,12 @@ root@archiso ~ # iwctl
 ```markdown
 # fdisk -l
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120830795-29df5800-c55f-11eb-8719-29a27ce35004.png" alt="fdisk" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122652987-07923080-d142-11eb-8fc1-dff96c619032.png" alt="fdisk" width="10000"/>
 
 ```markdown
 # wipefs -a /dev/sda 
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120843200-1d163080-c56e-11eb-82af-1ee05d1dd587.png" alt="wipefs" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/120843200-1d163080-c56e-11eb-82af-1ee05d1dd587.png" alt="wipefs" width="10000"/>
 
 ##### **Graficzny (zalecany dla początkujących)**
 ##### cfdisk – szybciej, wygodniej, lepiej?
@@ -154,13 +154,16 @@ root@archiso ~ # iwctl
 ##### Po uruchomieniu otrzymasz monit w ten sposób:
 ##### **Wybierz typ tabeli gpt**.
   
-<img src="https://user-images.githubusercontent.com/43359077/120856378-0e387980-c580-11eb-814e-49e0a23268dc.png" alt="dos" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122653015-390afc00-d142-11eb-90f0-87a2e3863e89.png" alt="gpt" width="1000"/>
 
-##### Następnie musimy utworzyć odpowiednio partycje **/** i **/home**.
+##### Następnie musimy utworzyć odpowiednio partycje **efi** , **/** i **/home**.
 ##### Osobiście zalecam **minimalne** granice rozmiaru na **/** ustalić w przedziale **10 - 50GB**, oraz całą resztę dostępnej przestrzeni na **/home**.
 ##### Teraz zobaczysz tabelę partycji w ten sposób:
 ##### Zobacz dostępne wolne miejsce. Tutaj mamy 1000GB. Wybierz **NOWY** i utwórz nową partycję.
 <img src="https://user-images.githubusercontent.com/43359077/122652782-e715a680-d140-11eb-9ec0-4efea38c00ed.png" alt="nowy" width="1000"/>
+  
+  ![2021-06-19_195713](https://user-images.githubusercontent.com/43359077/122653095-c9494100-d142-11eb-9cea-a2f0e224b2c6.png)
+
 
 ##### Wpisz rozmiar partycji w MB (512MiB) i naciśnij klawisz Enter
   
@@ -211,7 +214,8 @@ root@archiso ~ # iwctl
   
 ##### Jesteśmy gotowi, by przejść powoli do instalacji bazowego systemu. Nowe partycje należy sformatować za pomocą systemu plików, zanim będzie można ich używać. Możesz to zrobić za pomocą odpowiedniego polecenia mkfs.
 #### 6. Formatowanie partycji BIOS with MBR
-##### Pozostałe dwie partycje można sformatować w dowolnym systemie plików Linux. Polecam użycie ext4.
+##### Dysk powinien mieć trzy partycje. Musimy je sformatować w dowolnym systemie plików Linux. Polecam użycie ext4.
+##### Pierwsza partycja to partycja UEFI. Musi być sformatowany za pomocą systemu plików FAT
 ```markdown
 # mkfs.fat -F32 -n EFI /dev/sda1
 # mkfs.ext4 -L root /dev/sda2
