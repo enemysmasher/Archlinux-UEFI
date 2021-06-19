@@ -194,22 +194,19 @@ root@archiso ~ # iwctl
 ##### cfdisk zapisze zmiany na wirtualnym napędzie dysków. cfdisk wyświetli następujący komunikat diagnostyczny:
 ##### Po zakończeniu działań programu wyjdź wybierając **Quit**.
 ##### Tablica partycji zostałą zmodyfikowana.
-<img src="https://user-images.githubusercontent.com/43359077/122656591-492fd500-d15c-11eb-88cd-55838e22943d.png" alt="quit" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122656591-492fd500-d15c-11eb-88cd-55838e22943d.png" alt="quit" width="1000"/>
 
 ##### Jak widać na dysku są 3 partycje.
 ```markdown
 # fdisk -l
 ```
-<img src="https://user-images.githubusercontent.com/43359077/122656614-85fbcc00-d15c-11eb-8218-8ad5f1d83c2c.png" alt="fdisk-l" width="1000
-  
-  ![2021-06-19_200438]()
-
+<img src="https://user-images.githubusercontent.com/43359077/122656614-85fbcc00-d15c-11eb-8218-8ad5f1d83c2c.png" alt="fdisk-l" width="1000"/>
 
 ###### [Do góry](#spis-treści)
 -----
   
 ##### Jesteśmy gotowi, by przejść powoli do instalacji bazowego systemu. Nowe partycje należy sformatować za pomocą systemu plików, zanim będzie można ich używać. Możesz to zrobić za pomocą odpowiedniego polecenia mkfs.
-#### 6. Formatowanie partycji BIOS with MBR
+#### 6. Formatowanie partycji UEFI with GPT
 ##### Dysk powinien mieć trzy partycje. Musimy je sformatować w dowolnym systemie plików Linux. Polecam użycie ext4.
 ##### Pierwsza partycja to partycja UEFI. Musi być sformatowany za pomocą systemu plików FAT
 ```markdown
@@ -217,8 +214,8 @@ root@archiso ~ # iwctl
 # mkfs.ext4 -L root /dev/sda2
 # mkfs.ext4 -L home /dev/sda3
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120876910-e531dc00-c5b3-11eb-990a-6479a4cf3a4f.png" alt="mkfs" width="800"/>
-  
+<img src="https://user-images.githubusercontent.com/43359077/122656892-0f140280-d15f-11eb-88ab-805cfc3037df.png" alt="mkfs" width="1000"/>
+
 ###### [Do góry](#spis-treści)
 -----
 
