@@ -668,7 +668,7 @@ zapisać ctrl+O -(zapisuje), ENTER później ctrl+X (zamyka nano)
 ##### Aby zainstalować środowisko graficzne KDE wydajemy polecenie:
 
 <details>
-<summary>Plasma KDE</summary>
+<summary>KDE PLASMA</summary>
 
 ```markdown
 # pacman -S plasma-desktop sddm
@@ -687,7 +687,7 @@ Menedżer wyświetlania SDDM
 </details>
  
 <details>
-<summary>Gnome</summary>
+<summary>GNOME</summary>
 
 ```markdown
 # pacman -S 
@@ -723,7 +723,67 @@ Menedżer wyświetlania
 </details>
 
 <details>
-<summary>CinnamonN</summary>
+<summary>Cinnamon</summary>
+
+```markdown
+# pacman -S pacman -S 
+``` 
+Menedżer wyświetlania  
+```markdown
+# systemctl enable 
+```
+</details>
+  
+<details>
+<summary>ENLIGHTENMENT</summary>
+
+```markdown
+# pacman -S pacman -S 
+``` 
+Menedżer wyświetlania  
+```markdown
+# systemctl enable 
+```
+</details>
+  
+<details>
+<summary>DEEPIN</summary>
+
+```markdown
+# pacman -S pacman -S 
+``` 
+Menedżer wyświetlania  
+```markdown
+# systemctl enable 
+```
+</details>
+  
+<details>
+<summary>BUDGIE</summary>
+
+```markdown
+# pacman -S pacman -S 
+``` 
+Menedżer wyświetlania  
+```markdown
+# systemctl enable 
+```
+</details>
+  
+<details>
+<summary>szczegóły</summary>
+
+```markdown
+# pacman -S pacman -S 
+``` 
+Menedżer wyświetlania  
+```markdown
+# systemctl enable 
+```
+</details>
+  
+<details>
+<summary>szczegóły</summary>
 
 ```markdown
 # pacman -S pacman -S 
@@ -734,7 +794,6 @@ Menedżer wyświetlania
 ```
 </details>
 
-  
 ###### [Do góry](#spis-treści)
 -----
 
