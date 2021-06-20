@@ -46,7 +46,7 @@
   * [**26. Sprawdź, czy internet wifi**](#26-sprawdź-czy-internet-wifi)
   * [**27. Dodaj użytkownika**](#27-dodaj-użytkownika)
   * [**28. SUDO - nadawanie uprawnień użytkownikom Linux**](#28-nast%C4%99pnie-w%C5%82%C4%85cz-uprawnienia-sudoers-dla-nowo-utworzonego-u%C5%BCytkownika)
-  * [**29. Pacman.conf - plik konfiguracyjny menedżera pakietów pacman**](#28-pacmanconf---plik-konfiguracyjny-menedżera-pakietów-pacman)
+  * [**29. Menedżer pakietów Pacman**](#29-pacmanconf---plik-konfiguracyjny-menedżera-pakietów-pacman)
   * [**30. Xorg**](md#29-instalacja-xorg-a)
   * [**31. Sterownik graficzny**](#30-wybieramy-dodatkowo-sterownik-poniżej-dla-swojej-karty-graficznej)
   
