@@ -495,6 +495,7 @@ archtest login: root
 <img src="https://user-images.githubusercontent.com/43359077/122674922-7cfc1080-d1d7-11eb-8708-9c24b7c08a43.png" alt="grub" width="1000"/> 
 
 ###### [Do góry](#spis-treści) 
+-----
 #### 26. Sprawdź, czy internet wifi
 ```markdown
 # ip a
@@ -581,6 +582,7 @@ zapisać ctrl+O -(zapisuje), ENTER później ctrl+X (zamyka nano)
 # pacman -S xorg xorg-xinit
 ```
 ###### [Do góry](#spis-treści)
+-----
 #### 31. Wybieramy dodatkowo sterownik poniżej dla swojej karty graficznej
 ##### Zainstaluj to tylko wtedy, gdy używasz graficznego AMD lub Intel lub chcesz użyć sterownika NVIDIA typu otwarte żródłowe (Nouveau, nie opracowany przez NVIDIA)
 
@@ -655,6 +657,7 @@ zapisać ctrl+O -(zapisuje), ENTER później ctrl+X (zamyka nano)
 
 ##### Jeśli nie wiesz, możesz zainstalować wszystko, ale może się zdarzyć, że wewnętrzna karta graficzna jest używana, jeśli zainstalujesz dla niej sterownik
 ###### [Do góry](#spis-treści)
+-----
 #### 32. Środowisko pulpitu
 ##### Musisz wybrać środowisko graficzne
 ##### Instrukcje dotyczące plazmy KDE są testowane przeze mnie, ponieważ go używam. Inne powinny działać, ale może być potrzebne dodatkowe pakiety do produktywnego użytku (żądania ściągnięcia są mile widziane)
@@ -729,3 +732,7 @@ Menedżer wyświetlania SDDM
 # systemctl enable gdm
 ```
 </details>
+
+  
+###### [Do góry](#spis-treści)
+-----
