@@ -668,7 +668,7 @@ zapisać ctrl+O -(zapisuje), ENTER później ctrl+X (zamyka nano)
 ##### Aby zainstalować środowisko graficzne KDE wydajemy polecenie:
 
 <details>
-<summary>Kde plasma>
+<summary>Kde plasma</summary>
 
 ```markdown
 # pacman -S plasma-desktop sddm
