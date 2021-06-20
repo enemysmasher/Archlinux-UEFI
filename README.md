@@ -585,7 +585,7 @@ xf86-input-synaptics
   
   
 <details>
-<summary>Plasma</summary>
+<summary>KDE Plasma</summary>
   
 ```markdown
 # pacman -S plasma-desktop sddm
@@ -597,4 +597,16 @@ Menedżer wyświetlania SDDM
 # systemctl enable sddm
 ```
 </details>
-
+<details>
+<summary>Gnome</summary>
+  
+```markdown
+# pacman -S gnome gnome-extra gdm
+```
+  
+Menedżer wyświetlania SDDM
+  
+```markdown
+# systemctl enable gdm
+```
+</details>
