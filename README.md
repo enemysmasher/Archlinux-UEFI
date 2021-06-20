@@ -38,15 +38,15 @@
   * [**18. Włącz sieć**](#18-włącz-sieć)
   * [**19. Tworzenie ramdisc**](#19-tworzenie-ramdisc)
   * [**20. Hasło użytkownika root**](#20-hasło-użytkownika-root)
-  * [**21. Jeśli posiadasz procesor Intela, zainstaluj pakiet intel-ucode.**](#21-jeśli-posiadasz-procesor-intela-zainstaluj-pakiet-intel-ucode)
+  * [**21. Mikrokodu**](#21-jeśli-posiadasz-procesor-intela-zainstaluj-pakiet-intel-ucode)
   * [**22. UEFI GRUB**](#22-uefi-grub)
-  * [**23. Teraz wiele osób ma dyski SSD, które obsługują TRIM. Dla bezpiecznej, cotygodniowej usługi TRIM na dyskach SSD i wszystkich innych urządzeniach, które umożliwiają obsługę TRIM**](#23-teraz-wiele-osób-ma-dyski-ssd-które-obsługują-trim-dla-bezpiecznej-cotygodniowej-usługi-trim-na-dyskach-ssd-i-wszystkich-innych-urządzeniach-które-umożliwiają-obsługę-trim)
+  * [**23. TRIM**](#23-teraz-wiele-osób-ma-dyski-ssd-które-obsługują-trim-dla-bezpiecznej-cotygodniowej-usługi-trim-na-dyskach-ssd-i-wszystkich-innych-urządzeniach-które-umożliwiają-obsługę-trim)
   * [**24. Wyjście z chroot**](#24-wyjście-z-chroot)
   * [**25. Logowanie się do systemu**](#25-logowanie-się-do-systemu)
   * [**26. Dodaj użytkownika**](#26-dodaj-użytkownika)
   * [**27. Następnie włącz uprawnienia sudoers dla nowo utworzonego użytkownika**](#27-następnie-włącz-uprawnienia-sudoers-dla-nowo-utworzonego-użytkownika)
   * [**28. Pacman.conf - plik konfiguracyjny menedżera pakietów pacman**](#28-pacmanconf---plik-konfiguracyjny-menedżera-pakietów-pacman)
-  
+  * [**29. Xorg**](md#29-instalacja-xorg-a)
   * [**30. Sterownik graficzny**](#30-wybieramy-dodatkowo-sterownik-poniżej-dla-swojej-karty-graficznej)
   
   
