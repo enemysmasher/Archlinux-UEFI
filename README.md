@@ -74,7 +74,6 @@ root@archiso ~ # iwctl
 ```
 ###### [Do góry](#spis-treści)
 -----  
-  
 #### 2. Połącz się z Internetem
 ```markdown
 # ping -c 5 google.pl
@@ -84,7 +83,6 @@ root@archiso ~ # iwctl
 
 ###### [Do góry](#spis-treści)
 -----
-
 #### 3. Układ klawiatury
 ##### **By wybrać polski układ klawiatur**
 ```markdown
@@ -101,7 +99,6 @@ root@archiso ~ # iwctl
 
 ###### [Do góry](#spis-treści)
 -----
-
 #### 4. Zaktualizuj systemowy zegar
 ```markdown
 # timedatectl set-ntp true
@@ -113,8 +110,7 @@ root@archiso ~ # iwctl
 <img src="https://user-images.githubusercontent.com/43359077/122652939-d74a9200-d141-11eb-9214-ee8d884cb948.png" alt="timedatectl" width="1000"/>
 
 ###### [Do góry](#spis-treści)
------
-  
+-----  
 #### 5. Partycjonuj dyski
 ##### W przypadku, gdy dysk twardy jest nowy, tak jak w przypadku maszyny wirtualnej lub chcesz ponownie podzielić dysk na partycje, uruchom to polecenie, aby utworzyć nową tablicę partycji.
 ##### **Wipefs** to polecenie czyści tablice partycji, kasuje wszystko z dysku. Potem **cfdisk** i wybierasz **gpt**. Potem lecisz już z instalacją Archa.
@@ -204,7 +200,6 @@ root@archiso ~ # iwctl
 
 ###### [Do góry](#spis-treści)
 -----
-  
 ##### Jesteśmy gotowi, by przejść powoli do instalacji bazowego systemu. Nowe partycje należy sformatować za pomocą systemu plików, zanim będzie można ich używać. Możesz to zrobić za pomocą odpowiedniego polecenia mkfs.
 #### 6. Formatowanie partycji UEFI z GPT
 ##### Dysk powinien mieć trzy partycje. Musimy je sformatować w dowolnym systemie plików Linux. Polecam użycie ext4.
@@ -218,7 +213,6 @@ root@archiso ~ # iwctl
 
 ###### [Do góry](#spis-treści)
 -----
-
 #### 7. Zamontuj system plików
 ##### Teraz nadszedł czas na zamontowanie tych partycji:
 ```markdown
@@ -236,7 +230,6 @@ root@archiso ~ # iwctl
   
 ###### [Do góry](#spis-treści)
 -----
-  
 #### 8. Instalacja systemu podstawowego
 ##### Teraz rozpoczynamy proces instalacji.
 ##### Pobranie pakietów i instalacja systemu mieści się w jednej komendzie:
@@ -250,8 +243,7 @@ root@archiso ~ # iwctl
 
 ##### To zajmie trochę czasu, aby pobrać i zainstalować te pakiety. Jeśli pliki do pobrania zostanie przerwane, nie trzeba panikować. Możesz uruchomić powyższe polecenie jeszcze raz i wznowić pobieranie.
 ###### [Do góry](#spis-treści)
------
-  
+----- 
 #### 9. Generowanie fstab
 ```markdown
 # genfstab -U -p /mnt >> /mnt/etc/fstab
@@ -264,7 +256,6 @@ root@archiso ~ # iwctl
   
 ###### [Do góry](#spis-treści)
 -----
-
 #### 10. Wejdź przez chroot do nowego systemu
 ```markdown
 # arch-chroot /mnt /bin/bash
@@ -273,7 +264,6 @@ root@archiso ~ # iwctl
 
 ###### [Do góry](#spis-treści)
 -----
-
 #### 11. Strefa czasowa - Ustaw czas
 ```markdown
 # ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
@@ -283,7 +273,6 @@ root@archiso ~ # iwctl
   
 ###### [Do góry](#spis-treści)
 -----
-
 #### 12. Konfiguracja języka
 ```markdown
 # nano /etc/locale.gen
@@ -314,7 +303,6 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 
 ###### [Do góry](#spis-treści)
 -----
-
 #### 13. Plik konfiguracyjny dla ustawień regionalnych - Ustaw zmienną
   
 ```markdown
@@ -343,7 +331,6 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 
 ###### [Do góry](#spis-treści)
 -----
-
 #### 14. Plik konfiguracyjny konsoli wirtualnej - Czcionka konsoli.
 ```markdown
 # nano /etc/vconsole.conf
@@ -359,8 +346,7 @@ FONT_MAP=8859-2
 zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
  
 ###### [Do góry](#spis-treści)
------
-  
+----- 
 #### 15. Ustaw nazwę hosta
 ##### Nazwa hosta to nazwa komputera. Nazwijmy go - archtest
 ```markdown
@@ -376,7 +362,6 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
   
 ###### [Do góry](#spis-treści)
 -----
-  
 #### 16. Musisz również dodać tę nazwę do pliku hosts
 ```markdown
 # nano /etc/hosts
@@ -394,8 +379,7 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
  
 ###### [Do góry](#spis-treści)
------
-  
+----- 
 #### 17. Konfiguracja sieci
 ##### Twój interfejs sieciowy jest wymieniony i włączony. Kabel jest podłączony lub podłączony do bezprzewodowej sieci LAN
 ##### Aktywuj dhcpcd
@@ -405,8 +389,7 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 <img src="https://user-images.githubusercontent.com/43359077/122670542-e4f42c00-d1c2-11eb-85d0-e63c63481cbf.png" alt="dhcpcd" width="1000"/>
 
 ###### [Do góry](#spis-treści)
------  
-  
+-----   
 #### 18. Włącz sieć
 ##### Najpierw zainstaluj menedżera sieci:
 ##### Pobranie pakietów i instalacja systemu mieści się w jednej komendzie:
@@ -426,8 +409,7 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 <img src="https://user-images.githubusercontent.com/43359077/122670681-80859c80-d1c3-11eb-88af-1d25de48ac21.png" alt="enable_networkmanager" width="1000"/>
  
 ###### [Do góry](#spis-treści)
------  
-  
+-----   
 #### 19. Tworzenie ramdisc
 ```markdown
 # mkinitcpio -P linux
@@ -435,8 +417,7 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 <img src="https://user-images.githubusercontent.com/43359077/122670701-9c893e00-d1c3-11eb-9b96-736019157d98.png" alt="mkinitcpio" width="1000"/>
 
 ###### [Do góry](#spis-treści)
------  
-  
+-----    
 #### 20. Hasło użytkownika root
 ```markdown
 # passwd
@@ -446,8 +427,7 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 <img src="https://user-images.githubusercontent.com/43359077/122670755-e3773380-d1c3-11eb-94be-3069b184fb63.png" alt="passwd" width="1000"/>
 
 ###### [Do góry](#spis-treści)
------  
-  
+-----    
 #### 21. Jeśli posiadasz procesor Intela, zainstaluj pakiet intel-ucode.
 ##### Procesory Intela i Amd potrzebują dodatkowo mikrokodów które będą wczytywane przy bootowaniu systemu.
 ##### Mikrokod Intela to mikrokod działający w procesorach:
@@ -464,7 +444,6 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 
 ###### [Do góry](#spis-treści)  
 -----  
-  
 #### 22. UEFI GRUB
 ##### Zainstaluj GRUB efibootmgr. Katalog nie jest domyślnie dostępny, należy najpierw utworzyć go z mkdir i zamontuj partycję
 ```markdown
@@ -477,8 +456,7 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 <img src="https://user-images.githubusercontent.com/43359077/122671227-e96e1400-d1c5-11eb-865a-a4e7d2eb6d30.png" alt="grub" width="1000"/>
 
 ###### [Do góry](#spis-treści)  
------  
-  
+-----    
 #### 23. Teraz wiele osób ma dyski SSD, które obsługują TRIM. Dla bezpiecznej, cotygodniowej usługi TRIM na dyskach SSD i wszystkich innych urządzeniach, które umożliwiają obsługę TRIM:
 ```markdown
 # systemctl enable fstrim.timer
@@ -486,8 +464,7 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 <img src="https://user-images.githubusercontent.com/43359077/122671309-44077000-d1c6-11eb-968e-0bb108aae757.png" alt="fstrim" width="1000"/>
 
 ###### [Do góry](#spis-treści)
------  
-  
+-----    
  #### 24. Wyjście z chroot
 ```markdown
 # exit
@@ -498,23 +475,20 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 # reboot
 ```
 ##### Jeśli wszystko zrobiłeś poprawnie, po ponownym uruchomieniu zobaczysz ekran powitalny GRUB z zainstalowanym Arch Linux.
-<img src="https://user-images.githubusercontent.com/43359077/120901140-58316600-c639-11eb-9d9f-ea33b0c63cc6.png" alt="grub" width="800"/> 
+<img src="https://user-images.githubusercontent.com/43359077/122674813-06f7a980-d1d7-11eb-9b8b-40baec5b7573.png" alt="grub" width="1000"/> 
 
 ###### [Do góry](#spis-treści)  
------  
-  
+-----   
 #### 25. Logowanie się do systemu
 ##### Po ponownym uruchomieniu systemu należy się zalogować wpisując login
 ```markdown
 archtest login: root
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120901471-654f5480-c63b-11eb-806d-743359679deb.png" alt="grub" width="800"/> 
-
 ##### Aby kontynuować, zaloguj się jako użytkownik root z wcześniej ustawionym hasłem.
+<img src="https://user-images.githubusercontent.com/43359077/122674922-7cfc1080-d1d7-11eb-8708-9c24b7c08a43.png" alt="grub" width="1000"/> 
 
 ###### [Do góry](#spis-treści)  
------
-  
+----- 
 #### 26. Dodaj użytkownika
 ##### Zamiast tego wpisz swoje własne **tester**
 ```markdown
@@ -525,11 +499,10 @@ archtest login: root
 # passwd tester
 ```
 ##### Po wciśnięciu ENTER należy dwa razy podać hasło nazwa_użytkownika 
-<img src="https://user-images.githubusercontent.com/43359077/120901968-00e1c480-c63e-11eb-9910-20065fb4b193.png" alt="uzytkownik" width="800"/>
- 
+<img src="https://user-images.githubusercontent.com/43359077/122675031-eed45a00-d1d7-11eb-9c36-1f6b069bd7a4.png" alt="uzytkownik" width="1000"/>
+
 ###### [Do góry](#spis-treści)  
-----  
-  
+----   
 #### 27. Następnie włącz uprawnienia sudoers dla nowo utworzonego użytkownika
 ##### Najprostsze podstawowe ustawienie można przeprowadzić wydając z konta "root" polecenie:
 ```markdown
@@ -543,19 +516,55 @@ root ALL=(ALL) ALL
 ##### wpisać poniższy tekst:
 ```yaml
 tester ALL=(ALL) ALL
-```
-  
+``` 
 **przed**
   
 <img src="https://user-images.githubusercontent.com/43359077/120902340-266fcd80-c640-11eb-8777-9d5ddae36df2.png" alt="root1" width="800"/>
 
-  
-  
 **po**
   
 <img src="https://user-images.githubusercontent.com/43359077/120902346-32f42600-c640-11eb-80bc-6b7862fff742.png" alt="root2" width="800"/>
 
 ###### [Do góry](#spis-treści)  
+-----
+#### 28. Pacman.conf - plik konfiguracyjny menedżera pakietów pacman
+##### Włączenie repozytorium z pakietami 32 bit i 64 bit w 64 bitowym systemie Arch Linux (np. wine , steam itp.)
+```markdown
+# # nano /etc/pacman.conf
+```
+##### Aby włączyć repozytorium multilib, odkomentuj, usuwając znak **#**
+##### Za pomocą klawiszy strzałek przewiń ekran w dół i znajdź linię
+###### przed
+```yaml
+#[multilib]
+#Include = /etc/pacman.d/mirrorlist
+```
+###### po  
+```yaml
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+```  
+  
+zapisać ctrl+O -(zapisuje), ENTER później ctrl+X (zamyka nano)
+
+##### Następnie zaktualizuj system i zainstaluj żądane pakiety multilib
+```markdown
+# pacman -Syu
+```
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 -----
 -----
 -----
