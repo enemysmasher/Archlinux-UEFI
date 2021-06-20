@@ -222,8 +222,8 @@ root@archiso ~ # iwctl
 #### 7. Zamontuj system plików
 ##### Teraz nadszedł czas na zamontowanie tych partycji:
 ```markdown
-# mkdir /mnt/efi
-# mount /dev/sda1 /mnt/efi
+# mkdir /boot/efi
+# mount /dev/sda1 /boot/efi
 # mount /dev/sda2 /mnt
 # mkdir /mnt/home
 # mount /dev/sda3 /mnt/home
