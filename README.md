@@ -47,6 +47,8 @@
   * [**27. Następnie włącz uprawnienia sudoers dla nowo utworzonego użytkownika**](#27-następnie-włącz-uprawnienia-sudoers-dla-nowo-utworzonego-użytkownika)
   * [**28. Pacman.conf - plik konfiguracyjny menedżera pakietów pacman**](#28-pacmanconf---plik-konfiguracyjny-menedżera-pakietów-pacman)
   
+  * [**30. Sterownik graficzny**](
+  
   
   * [**the continue ...**](https://i.imgur.com/x08cazS.gif)
   
@@ -562,24 +564,87 @@ zapisać ctrl+O -(zapisuje), ENTER później ctrl+X (zamyka nano)
 ###### [Do góry](#spis-treści)
 -----  
 #### 29. Instalacja Xorg-a
+##### Są to niektóre pakiety potrzebne do prawidłowego działania niektórych urządzeń wejściowych. Instalacja ich nie szkodzi, nawet jeśli ich nie potrzebujesz
 ##### Xorg to serwer wyświetlania, którego użyjemy
 ```markdown
-# pacman -S xorg xorg-xinit xf86-input-evdev xf86-video-vesa mesa xf86-video-fbdev
+# pacman -S xorg xorg-xinit
 ```
-xf86-input-synaptics
-  
-##### 30. Wybieramy dodatkowo sterownik z tabelki poniżej dla swojej karty graficznej
-  
-| Marka     |Typ               | Strerowniki        | OpenGL                  | OpenGL (multilib)             | 
-|-----------|------------------|--------------------|-------------------------|-------------------------------|
-| INTEL     | otwarte żródłowe | xf86-video-intel   | mesa                    | lib32-mesa                    |
-| AMD / ATI | otwarte żródłowe | xf86-video-ati     | mesa                    | lib32-mesa                    |        
-| AMD / ATI | własnościowy     | xf86-video-amdgpu  | amdgpu-pro-libgl (aur)  | lib32-amdgpu-pro-libgl (aur)  |
-| NVIDIA    | otwarte żródłowe | xf86-video-nouveau | mesa                    | lib32-mesa                    |        
-| NVIDIA    | własnościowy     | nvidia             | nvidia-utils            | lib32-nvidia-utils            | 
-| NVIDIA    | własnościowy     | nvidia-390xx (aur) | nvidia-380xx-utils (aur)| lib32-nvidia-390xx-utils (aur)|
+#### 30. Wybieramy dodatkowo sterownik poniżej dla swojej karty graficznej
+##### Zainstaluj to tylko wtedy, gdy używasz graficznego AMD lub Intel lub chcesz użyć sterownika NVIDIA typu otwarte żródłowe (Nouveau, nie opracowany przez NVIDIA)
 
-#### Środowisko pulpitu
+<details>
+<summary>INTEL</summary>
+  
+```markdown
+# pacman -S xf86-video-intel 
+```
+###### jest sterownikiem Intela typu otwarte żródłowe (prawdopodobnie chcesz to pominąć i użyje sterownika modesetting. Więcej informacji można znaleźć na stronie wiki)
+</details>
+  
+<details>
+<summary>AMD</summary>
+  
+```markdown
+# pacman -S xf86-video-amdgpu 
+```
+###### jest dla nowszych procesorów graficznych AMD
+##### AMD-narzędzia
+  
+```markdown
+# pacman -S libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau libva-vdpau-driver lib32-libva-vdpau-driver amdvlk lib32-amdvlk
+```
+###### Zainstaluj te pakiety tylko wtedy, gdy używasz graficznego AMD
+</details>
+  
+<details>
+<summary>NOUVEAU</summary>
+  
+```markdown
+# pacman -S xf86-video-nouveau 
+```
+###### to sterownik NVIDIA typu otwarte żródłowe
+</details>
+  
+<details>
+<summary>ATI</summary>
+  
+```markdown
+# pacman -S xf86-video-ati
+```
+###### jest dla starszych procesorów graficznych AMD
+</details>
+  
+<details>
+<summary>VMWARE</summary>
+  
+```markdown
+# pacman -S xf86-video-vmware
+```
+###### dla VirtualBox, VMWare, QEMU
+</details>
+  
+<details>
+<summary>FBDEV</summary>
+  
+```markdown
+# pacman -S xf86-video-fbdev
+```
+###### dla Hyper-V
+</details>
+  
+<details>
+<summary>NVIDIA</summary>
+  
+```markdown
+# pacman -S nvidia nvidia-lts nvidia-utils lib32-nvidia-utils libvdpau lib32-libvdpau
+```
+###### Zainstaluj te pakiety tylko wtedy, gdy używasz graficznego NVIDIA
+</details>
+
+##### Jeśli nie wiesz, możesz zainstalować wszystko, ale może się zdarzyć, że wewnętrzna karta graficzna jest używana, jeśli zainstalujesz dla niej sterownik
+
+
+#### 31. Środowisko pulpitu
 ##### Musisz wybrać środowisko graficzne
 ##### Instrukcje dotyczące plazmy KDE są testowane przeze mnie, ponieważ go używam. Inne powinny działać, ale może być potrzebne dodatkowe pakiety do produktywnego użytku (żądania ściągnięcia są mile widziane)
   
@@ -597,6 +662,49 @@ Menedżer wyświetlania SDDM
 # systemctl enable sddm
 ```
 </details>
+  
+Aby zainstalować środowisko graficzne KDE wydajemy polecenie:
+
+# pacman -S plasma-desktop
+# echo "exec startkde" > ~/.xinitrc
+Jeśli chcesz zainstalować dodatki:
+
+# pacman -S plasma-pa plasma-nm 
+
+  30.Zainstaluj SDDM jako menedżera wyświetlania. I włączone w systemd
+
+# pacman -S sddm
+# systemctl enable sddm
+Jeśli chcesz zainstalować dodatki:
+
+# pacman -S sddm-kcm
+  
+  
+  
+  
+  
+  
+   xf86-input-evdev xf86-video-vesa mesa xf86-video-fbdev xf86-input-libinput
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 <details>
 <summary>Gnome</summary>
   
