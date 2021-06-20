@@ -669,7 +669,7 @@ zapisać ctrl+O -(zapisuje), ENTER później ctrl+X (zamyka nano)
 
 <details>
 <summary>Plasma KDE</summary>
-  
+
 ```markdown
 # pacman -S plasma-desktop sddm
 ```
@@ -685,28 +685,14 @@ Menedżer wyświetlania SDDM
 # pacman -S plasma-pa plasma-nm 
 ```
 </details>
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+ 
 <details>
 <summary>Gnome</summary>
-  
+
 ```markdown
 # pacman -S gnome gnome-extra gdm
-```
-  
-Menedżer wyświetlania SDDM
-  
+``` 
+Menedżer wyświetlania SDDM  
 ```markdown
 # systemctl enable gdm
 ```
@@ -715,3 +701,4 @@ Menedżer wyświetlania SDDM
   
 ###### [Do góry](#spis-treści)
 -----
+
