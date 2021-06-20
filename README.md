@@ -50,7 +50,7 @@
   * [**30. Xorg**](#30-instalacja-xorg-a)
   * [**31. Sterownik graficzny**](#31-wybieramy-dodatkowo-sterownik-poniżej-dla-swojej-karty-graficznej)
   * [**32. Wybór środowiska pulpitu**](#32-środowisko-pulpitu)
-  * [**33. Dźwięk**]()
+  * [**33. Dźwięk**](#33-dźwięk)
   
   
   * [**the continue ...**](https://i.imgur.com/x08cazS.gif)
