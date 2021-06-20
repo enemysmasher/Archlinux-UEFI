@@ -48,7 +48,7 @@
   * [**28. SUDO - nadawanie uprawnień użytkownikom Linux**](#28-nast%C4%99pnie-w%C5%82%C4%85cz-uprawnienia-sudoers-dla-nowo-utworzonego-u%C5%BCytkownika)
   * [**29. Menedżer pakietów Pacman**](#29-pacmanconf---plik-konfiguracyjny-menedżera-pakietów-pacman)
   * [**30. Xorg**](#30-instalacja-xorg-a)
-  * [**31. Sterownik graficzny**](#30-wybieramy-dodatkowo-sterownik-poniżej-dla-swojej-karty-graficznej)
+  * [**31. Sterownik graficzny**](#31-wybieramy-dodatkowo-sterownik-poniżej-dla-swojej-karty-graficznej)
   * [**32. Wybór środowiska pulpitu**](#32-środowisko-pulpitu)
   
   
