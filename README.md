@@ -50,6 +50,7 @@
   * [**30. Xorg**](#30-instalacja-xorg-a)
   * [**31. Sterownik graficzny**](#31-wybieramy-dodatkowo-sterownik-poniżej-dla-swojej-karty-graficznej)
   * [**32. Wybór środowiska pulpitu**](#32-środowisko-pulpitu)
+  * [**33. Dźwięk**]()
   
   
   * [**the continue ...**](https://i.imgur.com/x08cazS.gif)
@@ -590,6 +591,13 @@ zapisać ctrl+O -(zapisuje), ENTER później ctrl+X (zamyka nano)
 #### 31. Wybieramy dodatkowo sterownik poniżej dla swojej karty graficznej
 ##### Zainstaluj to tylko wtedy, gdy używasz graficznego AMD lub Intel lub chcesz użyć sterownika NVIDIA typu otwarte żródłowe (Nouveau, nie opracowany przez NVIDIA)
 
+##### Sterownik graficzny
+##### Mesa
+###### Jest to przydatne dla wszystkich procesorów graficznych
+```markdown
+# pacman -S mesa lib32-mesa
+```
+  
 <details>
 <summary>INTEL</summary>
   
@@ -796,4 +804,5 @@ Menedżer wyświetlania
 
 ###### [Do góry](#spis-treści)
 -----
+#### 33. Dźwięk
 
