@@ -805,18 +805,53 @@ Menedżer wyświetlania
 ###### [Do góry](#spis-treści)
 -----
 #### 33. Dźwięk
- 
-  
+##### Zainstaluj dźwięk dla KDE Plasma
+```markdown
+# pacman -S pavucontrol-qt
+```
+##### Zainstaluj dźwięk dla inne środowisko graficzne
+```markdown
+# pacman -S pavucontrol
+```
 ##### Niektóre moduły PulseAudio nie są zawarte w pakiecie głównym i w razie potrzeby muszą być zainstalowane oddzielnie:
 
-pulseaudio-alsa dla PulseAudio do zarządzania ALSA, jak również, patrz #ALSA
-pulseaudio-bluetooth dla wsparcia bluetooth (Bluez), patrz strona zestawu słuchawkowego bluetooth
-pulseaudio-korektor do zlewu korektora (qpaeq)
-pulseaudio-jack do wykrywania zlewu JACK, źródła i jackdbus
-pulseaudio-lirc do regulacji głośności na podczerwień z LIRC
-pulseaudio-zeroconf dla obsługi Zeroconf(Avahi/DNS-SD)
+<details>
+<summary>pulseaudio-alsa</summary>
   
+```markdown
+# pacman -S pulseaudio-alsa
+```
+###### dla PulseAudio do zarządzania ALSA
+</details>
   
+<details>
+<summary>pulseaudio-bluetooth</summary>
+  
+```markdown
+# pacman -S pulseaudio-bluetooth
+```
+###### dla wsparcia bluetooth (Bluez)
+</details>
+  
+<details>
+<summary>pulseaudio-equalizer</summary>
+  
+```markdown
+# pacman -S pulseaudio-equalizer
+```
+###### do korektora graficzny (qpaeq)
+</details>
+ 
+<details>
+<summary>alsa-plugins</summary>
+  
+```markdown
+# pacman -S alsa-plugins
+```
+###### dodatkowe wtyczki alsa
+</details>
+
+
   
   
   
