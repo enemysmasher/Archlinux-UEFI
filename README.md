@@ -670,7 +670,7 @@ zapisać ctrl+O -(zapisuje), ENTER później ctrl+X (zamyka nano)
 # pacman -S plasma-desktop sddm
 ```
   
-Menedżer wyświetlania SDDM
+###### Menedżer wyświetlania SDDM
   
 ```markdown
 # systemctl enable sddm
@@ -687,7 +687,7 @@ Jeśli chcesz zainstalować dodatki:
 
   30.Zainstaluj SDDM jako menedżera wyświetlania. I włączone w systemd
 
-# pacman -S sddm
+
 # systemctl enable sddm
 Jeśli chcesz zainstalować dodatki:
 
