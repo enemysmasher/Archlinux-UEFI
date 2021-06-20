@@ -542,30 +542,25 @@ tester ALL=(ALL) ALL
 #[multilib]
 #Include = /etc/pacman.d/mirrorlist
 ```
+<img src="https://user-images.githubusercontent.com/43359077/122675591-66a38400-d1da-11eb-9309-95cf78d7778f.png" alt="multilib1" width="1000"/>
  
-  ![image](https://user-images.githubusercontent.com/43359077/122675591-66a38400-d1da-11eb-9309-95cf78d7778f.png)
-
-  
 ###### po  
 ```yaml
 [multilib]
 Include = /etc/pacman.d/mirrorlist
 ```  
-  
-![image](https://user-images.githubusercontent.com/43359077/122675596-6c996500-d1da-11eb-849c-c9c2a5b88d1a.png)
+<img src="https://user-images.githubusercontent.com/43359077/122675596-6c996500-d1da-11eb-849c-c9c2a5b88d1a.png" alt="multilib2" width="1000"/>
 
-
-  
 zapisać ctrl+O -(zapisuje), ENTER później ctrl+X (zamyka nano)
 
 ##### Następnie zaktualizuj system i zainstaluj żądane pakiety multilib
 ```markdown
 # pacman -Syu
 ```
-  
-  ![image](https://user-images.githubusercontent.com/43359077/122675618-85a21600-d1da-11eb-82a7-fc0c839168fa.png)
+<img src="https://user-images.githubusercontent.com/43359077/122676398-3827a800-d1de-11eb-8ed0-851edb4a9562.png" alt="pacmansyu" width="1000"/>
 
-  
+###### [Do góry](#spis-treści)
+-----  
   
   
   
