@@ -664,53 +664,28 @@ zapisać ctrl+O -(zapisuje), ENTER później ctrl+X (zamyka nano)
 -----
 #### 32. Środowisko pulpitu
 ##### Musisz wybrać środowisko graficzne
-##### Instrukcje dotyczące plazmy KDE są testowane przeze mnie, ponieważ go używam. Inne powinny działać, ale może być potrzebne dodatkowe pakiety do produktywnego użytku (żądania ściągnięcia są mile widziane)
-  
-  
+##### Instrukcje dotyczące plazmy KDE są testowane przeze mnie, ponieważ go używam.
+##### Aby zainstalować środowisko graficzne KDE wydajemy polecenie:
+
 <details>
-<summary>KDE Plasma</summary>
+<summary>Plasma KDE</summary>
   
 ```markdown
 # pacman -S plasma-desktop sddm
 ```
-  
-###### Menedżer wyświetlania SDDM
-  
+Menedżer wyświetlania SDDM
 ```markdown
 # systemctl enable sddm
 ```
-</details>
-  
-Aby zainstalować środowisko graficzne KDE wydajemy polecenie:
-
-# pacman -S plasma-desktop
+```markdown
 # echo "exec startkde" > ~/.xinitrc
-Jeśli chcesz zainstalować dodatki:
-
+```
+##### Jeśli chcesz zainstalować dodatki:
+```markdown
 # pacman -S plasma-pa plasma-nm 
+```
+</details>
 
-  30.Zainstaluj SDDM jako menedżera wyświetlania. I włączone w systemd
-
-
-# systemctl enable sddm
-Jeśli chcesz zainstalować dodatki:
-
-# pacman -S sddm-kcm
-  
-  
-  
-  
-  
-  
-   xf86-input-evdev xf86-video-vesa mesa xf86-video-fbdev xf86-input-libinput
-  
-  
-  
-  
-  
-  
-  
-  
   
   
   
