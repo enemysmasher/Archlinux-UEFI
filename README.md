@@ -45,7 +45,7 @@
   * [**25. Logowanie się do systemu**](#25-logowanie-się-do-systemu)
   * [**26. Dodaj użytkownika**](#26-dodaj-użytkownika)
   * [**27. Następnie włącz uprawnienia sudoers dla nowo utworzonego użytkownika**](#27-następnie-włącz-uprawnienia-sudoers-dla-nowo-utworzonego-użytkownika)
-  * [**28. Pacman.conf - plik konfiguracyjny menedżera pakietów pacman**](#28-pacman.conf---plik-konfiguracyjny-menedżera-pakietów-pacman)
+  * [**28. Pacman.conf - plik konfiguracyjny menedżera pakietów pacman**](#28-pacmanconf---plik-konfiguracyjny-menedżera-pakietów-pacman)
   
   
   * [**the continue ...**](https://i.imgur.com/x08cazS.gif)
