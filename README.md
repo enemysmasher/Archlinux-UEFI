@@ -697,6 +697,31 @@ Menedżer wyświetlania SDDM
 # systemctl enable gdm
 ```
 </details>
+  
+<details>
+<summary>MATE</summary>
+
+```markdown
+# pacman -S mate mate-extra gdm
+``` 
+Menedżer wyświetlania GDM 
+```markdown
+# systemctl enable gdm
+```
+</details>
+  
+<details>
+<summary>szczegóły</summary>
+
+```markdown
+# pacman -S ssssss
+``` 
+Menedżer wyświetlania  
+```markdown
+# systemctl enable 
+```
+</details>
+  
 
   
 ###### [Do góry](#spis-treści)
