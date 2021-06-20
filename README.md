@@ -561,16 +561,44 @@ zapisać ctrl+O -(zapisuje), ENTER później ctrl+X (zamyka nano)
 
 ###### [Do góry](#spis-treści)
 -----  
+#### 29. Instalacja Xorg-a
+##### Xorg to serwer wyświetlania, którego użyjemy
+```markdown
+# pacman -S xorg xorg-xinit xf86-input-evdev xf86-video-vesa mesa xf86-video-fbdev
+```
+xf86-input-synaptics
+  
+##### 30. Wybieramy dodatkowo sterownik z tabelki poniżej dla swojej karty graficznej
+  
+| Marka  |Typ  | Strerowniki           | OpenGL | OpenGL (multilib)    | https://      |
+|-----------|-----------|------------------------|---------------|------------|------------|
+| INTEL 
+| ❌        | /dev/sdXY | Linux swap             | -             |            | -          |
+| ✔️        | /dev/sdXY | Linux                  | /mnt          |            | -          |
+| ❌        | /dev/sdXY | Linux                  | /mnt/home     |            | -          |
+  
+  
+| Marka     | Typ              | Sterowniki           | OpenGL   | OpenGL (multilib) | Dokumentacja |
+|-----------|------------------|----------------------|---------------|
+| AMD / ATI | otwarte zródłowe | xf86-video-ati | /mnt/boot/efi |
+-------------------------------------------------------------------------------
+| AMD / ATI | własnościowy      |
+| INTEL     | otwarte zródłowe | Linux swap           | -             |
+| NVIDIA    | otwarte zródłowe | Linux                | /mnt          |
+| NVIDIA    | własnościowy     | Linux                | /mnt/home     |
   
   
   
-  
-  
-  
-  
-  
-  
-  
+#### Środowisko pulpitu
+##### Musisz wybrać środowisko graficzne
+##### Instrukcje dotyczące plazmy KDE są testowane przeze mnie, ponieważ go używam. Inne powinny działać, ale może być potrzebne dodatkowe pakiety do produktywnego użytku (żądania ściągnięcia są mile widziane)
+
+PLASMA KDE
+XFCE
+GNOME
+CINNAMON
+DEEPIN
+MATE
   
   
   
