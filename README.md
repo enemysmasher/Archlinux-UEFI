@@ -43,7 +43,7 @@
   * [**23. TRIM**](#23-teraz-wiele-osób-ma-dyski-ssd-które-obsługują-trim-dla-bezpiecznej-cotygodniowej-usługi-trim-na-dyskach-ssd-i-wszystkich-innych-urządzeniach-które-umożliwiają-obsługę-trim)
   * [**24. Wyjście z chroot**](#24-wyjście-z-chroot)
   * [**25. Logowanie się do systemu**](#25-logowanie-się-do-systemu)
-  * [**26. Sprawdź, czy internet wifi**]()
+  * [**26. Sprawdź, czy internet wifi**](#26-sprawdź-czy-internet-wifi)
   * [**27. Dodaj użytkownika**](#26-dodaj-użytkownika)
   * [**28. Następnie włącz uprawnienia sudoers dla nowo utworzonego użytkownika**](#27-następnie-włącz-uprawnienia-sudoers-dla-nowo-utworzonego-użytkownika)
   * [**29. Pacman.conf - plik konfiguracyjny menedżera pakietów pacman**](#28-pacmanconf---plik-konfiguracyjny-menedżera-pakietów-pacman)
