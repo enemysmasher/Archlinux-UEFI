@@ -49,6 +49,7 @@
   * [**29. Menedżer pakietów Pacman**](#29-pacmanconf---plik-konfiguracyjny-menedżera-pakietów-pacman)
   * [**30. Xorg**](#30-instalacja-xorg-a)
   * [**31. Sterownik graficzny**](#30-wybieramy-dodatkowo-sterownik-poniżej-dla-swojej-karty-graficznej)
+  * [**32. Wybór środowiska pulpitu**](#32-środowisko-pulpitu)
   
   
   * [**the continue ...**](https://i.imgur.com/x08cazS.gif)
