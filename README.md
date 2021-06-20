@@ -47,7 +47,7 @@
   * [**27. Następnie włącz uprawnienia sudoers dla nowo utworzonego użytkownika**](#27-następnie-włącz-uprawnienia-sudoers-dla-nowo-utworzonego-użytkownika)
   * [**28. Pacman.conf - plik konfiguracyjny menedżera pakietów pacman**](#28-pacmanconf---plik-konfiguracyjny-menedżera-pakietów-pacman)
   
-  * [**30. Sterownik graficzny**](
+  * [**30. Sterownik graficzny**](#30-wybieramy-dodatkowo-sterownik-poniżej-dla-swojej-karty-graficznej)
   
   
   * [**the continue ...**](https://i.imgur.com/x08cazS.gif)
