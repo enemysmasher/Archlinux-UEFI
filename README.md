@@ -519,12 +519,12 @@ tester ALL=(ALL) ALL
 ``` 
 **przed**
   
-<img src="https://user-images.githubusercontent.com/43359077/120902340-266fcd80-c640-11eb-8777-9d5ddae36df2.png" alt="root1" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122675482-ec72ff80-d1d9-11eb-8101-158fbc74c462.png" alt="root1" width="1000"/>
 
 **po**
   
-<img src="https://user-images.githubusercontent.com/43359077/120902346-32f42600-c640-11eb-80bc-6b7862fff742.png" alt="root2" width="800"/>
-
+<img src="https://user-images.githubusercontent.com/43359077/122675493-f432a400-d1d9-11eb-87d0-81c8b2a1f4d0.png" alt="root2" width="1000"/>
+  
 ###### [Do góry](#spis-treści)  
 -----
 #### 28. Pacman.conf - plik konfiguracyjny menedżera pakietów pacman
@@ -539,11 +539,19 @@ tester ALL=(ALL) ALL
 #[multilib]
 #Include = /etc/pacman.d/mirrorlist
 ```
+ 
+  ![image](https://user-images.githubusercontent.com/43359077/122675591-66a38400-d1da-11eb-9309-95cf78d7778f.png)
+
+  
 ###### po  
 ```yaml
 [multilib]
 Include = /etc/pacman.d/mirrorlist
 ```  
+  
+![image](https://user-images.githubusercontent.com/43359077/122675596-6c996500-d1da-11eb-849c-c9c2a5b88d1a.png)
+
+
   
 zapisać ctrl+O -(zapisuje), ENTER później ctrl+X (zamyka nano)
 
@@ -551,6 +559,9 @@ zapisać ctrl+O -(zapisuje), ENTER później ctrl+X (zamyka nano)
 ```markdown
 # pacman -Syu
 ```
+  
+  ![image](https://user-images.githubusercontent.com/43359077/122675618-85a21600-d1da-11eb-82a7-fc0c839168fa.png)
+
   
   
   
