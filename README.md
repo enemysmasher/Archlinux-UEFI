@@ -43,11 +43,12 @@
   * [**23. TRIM**](#23-teraz-wiele-osób-ma-dyski-ssd-które-obsługują-trim-dla-bezpiecznej-cotygodniowej-usługi-trim-na-dyskach-ssd-i-wszystkich-innych-urządzeniach-które-umożliwiają-obsługę-trim)
   * [**24. Wyjście z chroot**](#24-wyjście-z-chroot)
   * [**25. Logowanie się do systemu**](#25-logowanie-się-do-systemu)
-  * [**26. Dodaj użytkownika**](#26-dodaj-użytkownika)
-  * [**27. Następnie włącz uprawnienia sudoers dla nowo utworzonego użytkownika**](#27-następnie-włącz-uprawnienia-sudoers-dla-nowo-utworzonego-użytkownika)
-  * [**28. Pacman.conf - plik konfiguracyjny menedżera pakietów pacman**](#28-pacmanconf---plik-konfiguracyjny-menedżera-pakietów-pacman)
-  * [**29. Xorg**](md#29-instalacja-xorg-a)
-  * [**30. Sterownik graficzny**](#30-wybieramy-dodatkowo-sterownik-poniżej-dla-swojej-karty-graficznej)
+  * [**26. Sprawdź, czy internet wifi**]()
+  * [**27. Dodaj użytkownika**](#26-dodaj-użytkownika)
+  * [**28. Następnie włącz uprawnienia sudoers dla nowo utworzonego użytkownika**](#27-następnie-włącz-uprawnienia-sudoers-dla-nowo-utworzonego-użytkownika)
+  * [**29. Pacman.conf - plik konfiguracyjny menedżera pakietów pacman**](#28-pacmanconf---plik-konfiguracyjny-menedżera-pakietów-pacman)
+  * [**30. Xorg**](md#29-instalacja-xorg-a)
+  * [**31. Sterownik graficzny**](#30-wybieramy-dodatkowo-sterownik-poniżej-dla-swojej-karty-graficznej)
   
   
   * [**the continue ...**](https://i.imgur.com/x08cazS.gif)
@@ -491,10 +492,18 @@ archtest login: root
 ```
 ##### Aby kontynuować, zaloguj się jako użytkownik root z wcześniej ustawionym hasłem.
 <img src="https://user-images.githubusercontent.com/43359077/122674922-7cfc1080-d1d7-11eb-8708-9c24b7c08a43.png" alt="grub" width="1000"/> 
-
+  
+#### 26. Sprawdź, czy internet wifi
+```markdown
+# ip a
+```
+Jeśli w sieci Wi-Fi należy połączyć się z:
+```markdown
+# nmtui
+```
 ###### [Do góry](#spis-treści)  
 ----- 
-#### 26. Dodaj użytkownika
+#### 27. Dodaj użytkownika
 ##### Zamiast tego wpisz swoje własne **tester**
 ```markdown
 # useradd -m tester
@@ -508,7 +517,7 @@ archtest login: root
 
 ###### [Do góry](#spis-treści)  
 ----   
-#### 27. Następnie włącz uprawnienia sudoers dla nowo utworzonego użytkownika
+#### 28. Następnie włącz uprawnienia sudoers dla nowo utworzonego użytkownika
 ##### Najprostsze podstawowe ustawienie można przeprowadzić wydając z konta "root" polecenie:
 ```markdown
 # nano /etc/sudoers
@@ -532,7 +541,7 @@ tester ALL=(ALL) ALL
   
 ###### [Do góry](#spis-treści)  
 -----
-#### 28. Pacman.conf - plik konfiguracyjny menedżera pakietów pacman
+#### 29. Pacman.conf - plik konfiguracyjny menedżera pakietów pacman
 ##### Włączenie repozytorium z pakietami 32 bit i 64 bit w 64 bitowym systemie Arch Linux (np. wine , steam itp.)
 ```markdown
 # # nano /etc/pacman.conf
@@ -563,13 +572,13 @@ zapisać ctrl+O -(zapisuje), ENTER później ctrl+X (zamyka nano)
 
 ###### [Do góry](#spis-treści)
 -----  
-#### 29. Instalacja Xorg-a
+#### 30. Instalacja Xorg-a
 ##### Są to niektóre pakiety potrzebne do prawidłowego działania niektórych urządzeń wejściowych. Instalacja ich nie szkodzi, nawet jeśli ich nie potrzebujesz
 ##### Xorg to serwer wyświetlania, którego użyjemy
 ```markdown
 # pacman -S xorg xorg-xinit
 ```
-#### 30. Wybieramy dodatkowo sterownik poniżej dla swojej karty graficznej
+#### 31. Wybieramy dodatkowo sterownik poniżej dla swojej karty graficznej
 ##### Zainstaluj to tylko wtedy, gdy używasz graficznego AMD lub Intel lub chcesz użyć sterownika NVIDIA typu otwarte żródłowe (Nouveau, nie opracowany przez NVIDIA)
 
 <details>
@@ -644,7 +653,7 @@ zapisać ctrl+O -(zapisuje), ENTER później ctrl+X (zamyka nano)
 ##### Jeśli nie wiesz, możesz zainstalować wszystko, ale może się zdarzyć, że wewnętrzna karta graficzna jest używana, jeśli zainstalujesz dla niej sterownik
 
 
-#### 31. Środowisko pulpitu
+#### 32. Środowisko pulpitu
 ##### Musisz wybrać środowisko graficzne
 ##### Instrukcje dotyczące plazmy KDE są testowane przeze mnie, ponieważ go używam. Inne powinny działać, ale może być potrzebne dodatkowe pakiety do produktywnego użytku (żądania ściągnięcia są mile widziane)
   
