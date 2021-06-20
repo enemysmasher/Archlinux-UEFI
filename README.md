@@ -690,38 +690,49 @@ Menedżer wyświetlania SDDM
 <summary>Gnome</summary>
 
 ```markdown
-# pacman -S gnome gnome-extra gdm
+# pacman -S 
 ``` 
-Menedżer wyświetlania SDDM  
+Menedżer wyświetlania
 ```markdown
-# systemctl enable gdm
+# systemctl enable
 ```
 </details>
   
 <details>
-<summary>MATE</summary>
+<summary>Mate</summary>
 
 ```markdown
-# pacman -S mate mate-extra gdm
+# pacman -S 
 ``` 
-Menedżer wyświetlania GDM 
+Menedżer wyświetlania 
 ```markdown
-# systemctl enable gdm
+# systemctl enable 
 ```
 </details>
   
 <details>
-<summary>szczegóły</summary>
+<summary>Xfce</summary>
 
 ```markdown
-# pacman -S ssssss
+# pacman -S 
+``` 
+Menedżer wyświetlania 
+```markdown
+# systemctl enable 
+```
+</details>
+
+<details>
+<summary>CinnamonN</summary>
+
+```markdown
+# pacman -S pacman -S 
 ``` 
 Menedżer wyświetlania  
 ```markdown
 # systemctl enable 
 ```
 </details>
-  
 
   
 ###### [Do góry](#spis-treści)
