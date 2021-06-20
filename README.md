@@ -45,7 +45,7 @@
   * [**25. Logowanie się do systemu**](#25-logowanie-się-do-systemu)
   * [**26. Dodaj użytkownika**](#26-dodaj-użytkownika)
   * [**27. Następnie włącz uprawnienia sudoers dla nowo utworzonego użytkownika**](#27-następnie-włącz-uprawnienia-sudoers-dla-nowo-utworzonego-użytkownika)
-  * [**the continue ...**](https://media.tenor.com/videos/ce8f0697abf84ff808d55c200cb4320e/mp4)
+  * [**the continue ...**](https://i.imgur.com/x08cazS.gif)
   
 #### Arch Linux - instalacja i konfiguracja
   
