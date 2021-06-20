@@ -23,7 +23,7 @@
   * [**3. Układ klawiatury**](#3-układ-klawiatury)
   * [**4. Zaktualizuj systemowy zegar**](#4-zaktualizuj-systemowy-zegar)
   * [**5. Partycjonuj dyski**](#5-partycjonuj-dyski)
-  * [**6. Formatowanie partycji UEFI with GPT**](#6-formatowanie-partycji-uefi-with-gpt)
+  * [**6. Formatowanie partycji UEFI z GPT**](#6-formatowanie-partycji-uefi-z-gpt)
   * [**7. Zamontuj system plików**](#7-zamontuj-system-plików)
   * [**8. Instalacja systemu podstawowego**](#8-instalacja-systemu-podstawowego)
   * [**9. Generowanie fstab**](#9-generowanie-fstab)
@@ -39,7 +39,7 @@
   * [**19. Tworzenie ramdisc**](#19-tworzenie-ramdisc)
   * [**20. Hasło użytkownika root**](#20-hasło-użytkownika-root)
   * [**21. Jeśli posiadasz procesor Intela, zainstaluj pakiet intel-ucode.**](#21-jeśli-posiadasz-procesor-intela-zainstaluj-pakiet-intel-ucode)
-  * [**22. BIOS GRUB**](#22-bios-grub)
+  * [**22. UEFI GRUB**](#22-uefi-grub)
   * [**23. Teraz wiele osób ma dyski SSD, które obsługują TRIM. Dla bezpiecznej, cotygodniowej usługi TRIM na dyskach SSD i wszystkich innych urządzeniach, które umożliwiają obsługę TRIM**](#23-teraz-wiele-osób-ma-dyski-ssd-które-obsługują-trim-dla-bezpiecznej-cotygodniowej-usługi-trim-na-dyskach-ssd-i-wszystkich-innych-urządzeniach-które-umożliwiają-obsługę-trim)
   * [**24. Wyjście z chroot**](#24-wyjście-z-chroot)
   * [**25. Logowanie się do systemu**](#25-logowanie-się-do-systemu)
@@ -206,7 +206,7 @@ root@archiso ~ # iwctl
 -----
   
 ##### Jesteśmy gotowi, by przejść powoli do instalacji bazowego systemu. Nowe partycje należy sformatować za pomocą systemu plików, zanim będzie można ich używać. Możesz to zrobić za pomocą odpowiedniego polecenia mkfs.
-#### 6. Formatowanie partycji UEFI with GPT
+#### 6. Formatowanie partycji UEFI z GPT
 ##### Dysk powinien mieć trzy partycje. Musimy je sformatować w dowolnym systemie plików Linux. Polecam użycie ext4.
 ##### Pierwsza partycja to partycja UEFI. Musi być sformatowany za pomocą systemu plików FAT
 ```markdown
@@ -222,13 +222,11 @@ root@archiso ~ # iwctl
 #### 7. Zamontuj system plików
 ##### Teraz nadszedł czas na zamontowanie tych partycji:
 ```markdown
-# mkdir /boot/efi
-# mount /dev/sda1 /boot/efi
 # mount /dev/sda2 /mnt
 # mkdir /mnt/home
 # mount /dev/sda3 /mnt/home
 ```
-<img src="https://user-images.githubusercontent.com/43359077/122657025-18519f00-d160-11eb-8d35-ed2d6fb46758.png" alt="mount" width="1000"/>
+<img src="https://user-images.githubusercontent.com/43359077/122669529-21715900-d1be-11eb-9a23-47219db54b87.png" alt="mount" width="1000"/>
 
 ##### Sprawdź punkty montażowe, czy zostały pomyślnie utworzone.
 ```markdown
@@ -271,7 +269,7 @@ root@archiso ~ # iwctl
 ```markdown
 # arch-chroot /mnt /bin/bash
 ``` 
-<img src="https://user-images.githubusercontent.com/43359077/120879922-24b5f380-c5c7-11eb-9f8b-b1336162493c.png" alt="arch-chroot" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122669619-875de080-d1be-11eb-9097-68c633955834.png" alt="arch-chroot" width="1000"/>
 
 ###### [Do góry](#spis-treści)
 -----
@@ -281,8 +279,8 @@ root@archiso ~ # iwctl
 # ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
 # hwclock --systohc --utc
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120880081-5f6c5b80-c5c8-11eb-94de-f65bff0a30c7.png" alt="czasowa" width="800"/>
-
+<img src="https://user-images.githubusercontent.com/43359077/122670378-1d473a80-d1c2-11eb-9937-5d6592e5884a.png" alt="czasowa" width="1000"/>
+  
 ###### [Do góry](#spis-treści)
 -----
 
@@ -290,7 +288,7 @@ root@archiso ~ # iwctl
 ```markdown
 # nano /etc/locale.gen
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120886743-c8b39500-c5ef-11eb-95cb-d7af41100399.png" alt="locale-gen" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122669712-e7ed1d80-d1be-11eb-8c2d-d6927550843d.png" alt="locale-gen" width="1000"/>
 
 ##### Za pomocą klawiszy strzałek przewiń ekran w dół i znajdź linię.
 ```js
@@ -306,15 +304,14 @@ pl_PL.UTF-8
 ```
 zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
   
-<img src="https://user-images.githubusercontent.com/43359077/120886633-3dd29a80-c5ef-11eb-987d-0f59fb69bc8d.png" alt="locale_gen" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122669731-fc311a80-d1be-11eb-9d5c-a1e7f0561f5a.png" alt="locale_gen" width="1000"/>
 
 ##### Następnie musisz wygenerować ustawienia regionalne
 ```markdown
 # locale-gen
 ```
-  
-<img src="https://user-images.githubusercontent.com/43359077/120886947-b423cc80-c5f0-11eb-9dff-9df183597f9c.png" alt="generowanie" width="800"/>
-  
+<img src="https://user-images.githubusercontent.com/43359077/122670172-e3296900-d1c0-11eb-872b-067a2b9949fa.png" alt="generowanie" width="1000"/>
+
 ###### [Do góry](#spis-treści)
 -----
 
@@ -323,7 +320,7 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 ```markdown
 # nano /etc/locale.conf
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120887670-86d91d80-c5f4-11eb-9e90-89a4b4499e28.png" alt="locale.conf" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122670207-0f44ea00-d1c1-11eb-9fb3-e9350d8c2c9a.png" alt="locale.conf" width="1000"/>
 
 ##### wpisać poniższy tekst:
 ```yaml
@@ -351,7 +348,7 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 ```markdown
 # nano /etc/vconsole.conf
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120888305-dec55380-c5f7-11eb-8f19-d9479ee7fd83.png" alt="vconsole" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122670237-40251f00-d1c1-11eb-9ee5-0b01dc4bb174.png" alt="vconsole" width="1000"/>
 
 ##### wpisać poniższy tekst:
 ```yaml
@@ -369,7 +366,7 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 ```markdown
 # nano /etc/hostname
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120888400-71fe8900-c5f8-11eb-81eb-411357044aa0.png" alt="hostname" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122670475-93e43800-d1c2-11eb-9a22-f2b99416da08.png" alt="hostname" width="1000"/>
 
 ##### wpisać poniższy tekst:
 ```yaml
@@ -384,7 +381,7 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 ```markdown
 # nano /etc/hosts
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120892829-5a32ff00-c610-11eb-896b-fa3100be471f.png" alt="hosts" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122670494-b1b19d00-d1c2-11eb-8d39-c4ef20e53b1d.png" alt="hosts" width="1000"/>
 
 ##### wpisać poniższy tekst:
 ```js
@@ -392,8 +389,8 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 ::1             localhost
 127.0.1.1       archtest.localdomain        archtest
 ```
- <img src="https://user-images.githubusercontent.com/43359077/120892943-e1807280-c610-11eb-8eca-13fa8144d5c1.png" alt="localhost" width="800"/>
- 
+ <img src="https://user-images.githubusercontent.com/43359077/122670516-c9892100-d1c2-11eb-886b-4dc6d4501f73.png" alt="localhost" width="1000"/>
+
 zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
  
 ###### [Do góry](#spis-treści)
@@ -405,7 +402,7 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 ```markdown
 # systemctl enable dhcpcd
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120892992-31f7d000-c611-11eb-85f6-c67202d97fb9.png" alt="dhcpcd" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122670542-e4f42c00-d1c2-11eb-85d0-e63c63481cbf.png" alt="dhcpcd" width="1000"/>
 
 ###### [Do góry](#spis-treści)
 -----  
@@ -420,14 +417,14 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 ```markdown
 # pacman -S iw iwd dialog net-tools wireless_tools wpa_supplicant
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120896952-1944e580-c624-11eb-8ee7-784f76a5c771.png" alt="network" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122670604-343a5c80-d1c3-11eb-9ab1-54c5aed03e7d.png" alt="network" width="1000"/>
 
 ##### Aktywuj usługi do następnego ponownego uruchomienia
  ```markdown 
 # systemctl enable NetworkManager
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120894858-d3375400-c61a-11eb-8fd7-3f03db7c1516.png" alt="enable_networkmanager" width="800"/>
-
+<img src="https://user-images.githubusercontent.com/43359077/122670681-80859c80-d1c3-11eb-88af-1d25de48ac21.png" alt="enable_networkmanager" width="1000"/>
+ 
 ###### [Do góry](#spis-treści)
 -----  
   
@@ -435,7 +432,7 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 ```markdown
 # mkinitcpio -P linux
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120895213-442b3b80-c61c-11eb-808d-300e6d853eb6.png" alt="mkinitcpio" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122670701-9c893e00-d1c3-11eb-9b96-736019157d98.png" alt="mkinitcpio" width="1000"/>
 
 ###### [Do góry](#spis-treści)
 -----  
@@ -446,7 +443,7 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 ```
 ##### Po wciśnięciu ENTER należy dwa razy podać hasło użytkownika root
   
-<img src="https://user-images.githubusercontent.com/43359077/120895893-522e8b80-c61f-11eb-9b1b-c9e529b607ec.png" alt="passwd" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122670755-e3773380-d1c3-11eb-94be-3069b184fb63.png" alt="passwd" width="1000"/>
 
 ###### [Do góry](#spis-treści)
 -----  
@@ -457,25 +454,27 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 ```markdown
 # pacman -S intel-ucode
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120896057-1516c900-c620-11eb-94bb-22a6afd58b0b.png" alt="intel" width="800"/>
+<img src="https://user-images.githubusercontent.com/43359077/122670812-25a07500-d1c4-11eb-94b8-383fd977c7d5.png" alt="intel" width="1000"/>
 
 ##### Mikrokod Amd to mikrokod działający w procesorach:
 ```markdown
 # pacman -S amd-ucode
 ```     
-<img src="https://user-images.githubusercontent.com/43359077/120896095-42fc0d80-c620-11eb-949b-dda7a81e6353.png" alt="amd" width="800"/> 
+<img src="https://user-images.githubusercontent.com/43359077/122670856-597b9a80-d1c4-11eb-8609-1a8522b62e16.png" alt="amd" width="1000"/>
 
 ###### [Do góry](#spis-treści)  
 -----  
   
-#### 22. BIOS GRUB
-##### Zainstaluj GRUB
+#### 22. UEFI GRUB
+##### Zainstaluj GRUB efibootmgr. Katalog nie jest domyślnie dostępny, należy najpierw utworzyć go z mkdir i zamontuj partycję
 ```markdown
-# pacman -S grub
-# grub-install --target=i386-pc --recheck /dev/sda 
+# pacman -S grub efibootmgr
+# mkdir /boot/efi
+# mount /dev/sda1 /boot/efi
+# grub-install --target=x86_64-efi --bootloader-id=grub_uefi --efi-directory=/boot/efi --removable --recheck
 # grub-mkconfig -o /boot/grub/grub.cfg
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120898730-6af16e00-c62c-11eb-8ca1-fe472c493d72.png" alt="grub" width="800"/> 
+<img src="https://user-images.githubusercontent.com/43359077/122671227-e96e1400-d1c5-11eb-865a-a4e7d2eb6d30.png" alt="grub" width="1000"/>
 
 ###### [Do góry](#spis-treści)  
 -----  
@@ -484,8 +483,8 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 ```markdown
 # systemctl enable fstrim.timer
 ```
-<img src="https://user-images.githubusercontent.com/43359077/120900751-d5a7a700-c636-11eb-828b-12d854702c1b.png" alt="fstrim" width="800"/> 
- 
+<img src="https://user-images.githubusercontent.com/43359077/122671309-44077000-d1c6-11eb-968e-0bb108aae757.png" alt="fstrim" width="1000"/>
+
 ###### [Do góry](#spis-treści)
 -----  
   
