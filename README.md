@@ -805,4 +805,20 @@ Menedżer wyświetlania
 ###### [Do góry](#spis-treści)
 -----
 #### 33. Dźwięk
+ 
+  
+##### Niektóre moduły PulseAudio nie są zawarte w pakiecie głównym i w razie potrzeby muszą być zainstalowane oddzielnie:
+
+pulseaudio-alsa dla PulseAudio do zarządzania ALSA, jak również, patrz #ALSA
+pulseaudio-bluetooth dla wsparcia bluetooth (Bluez), patrz strona zestawu słuchawkowego bluetooth
+pulseaudio-korektor do zlewu korektora (qpaeq)
+pulseaudio-jack do wykrywania zlewu JACK, źródła i jackdbus
+pulseaudio-lirc do regulacji głośności na podczerwień z LIRC
+pulseaudio-zeroconf dla obsługi Zeroconf(Avahi/DNS-SD)
+  
+  
+  
+  
+  
+###### [Do góry](#spis-treści)
 
