@@ -570,14 +570,14 @@ xf86-input-synaptics
   
 ##### 30. Wybieramy dodatkowo sterownik z tabelki poniżej dla swojej karty graficznej
   
-| Marka     |Typ               | Strerowniki      | OpenGL | OpenGL (multilib) | https://   |
-|-----------|------------------|------------------|--------|-------------------|------------|
-| INTEL     | otwarte żródłowe | xf86-video-intel | mesa   | lib32-mesa        |            |
-| AMD / ATI | otwarte żródłowe | xf86-video-ati   | mesa   | lib32-mesa        |            |
-| AMD / ATI | własnościowy     |                  |        |                   |            |
-| NVIDIA    | otwarte żródłowe |                  |        |                   |            |
-| NVIDIA    | własnościowy     |                  |        |                   |            |
-  
+| Marka     |Typ               | Strerowniki        | OpenGL                  | OpenGL (multilib)             | https://   |
+|-----------|------------------|--------------------|-------------------------|-------------------------------|------------|
+| INTEL     | otwarte żródłowe | xf86-video-intel   | mesa                    | lib32-mesa                    |            |
+| AMD / ATI | otwarte żródłowe | xf86-video-ati     | mesa                    | lib32-mesa                    |            |
+| AMD / ATI | własnościowy     | xf86-video-amdgpu  | amdgpu-pro-libgl (aur)  | lib32-amdgpu-pro-libgl (aur)  |            |
+| NVIDIA    | otwarte żródłowe | xf86-video-nouveau | mesa                    | lib32-mesa                    |            |
+| NVIDIA    | własnościowy     | nvidia             | nvidia-utils            | lib32-nvidia-utils            |            |
+| NVIDIA    | własnościowy     | nvidia-390xx (aur) | nvidia-380xx-utils (aur)| lib32-nvidia-390xx-utils (aur)|
 
 #### Środowisko pulpitu
 ##### Musisz wybrać środowisko graficzne
