@@ -492,7 +492,8 @@ archtest login: root
 ```
 ##### Aby kontynuować, zaloguj się jako użytkownik root z wcześniej ustawionym hasłem.
 <img src="https://user-images.githubusercontent.com/43359077/122674922-7cfc1080-d1d7-11eb-8708-9c24b7c08a43.png" alt="grub" width="1000"/> 
-  
+
+###### [Do góry](#spis-treści) 
 #### 26. Sprawdź, czy internet wifi
 ```markdown
 # ip a
