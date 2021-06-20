@@ -570,47 +570,31 @@ xf86-input-synaptics
   
 ##### 30. Wybieramy dodatkowo sterownik z tabelki poniżej dla swojej karty graficznej
   
-| Marka     |Typ               | Strerowniki        | OpenGL                  | OpenGL (multilib)             | https://   |
-|-----------|------------------|--------------------|-------------------------|-------------------------------|------------|
-| INTEL     | otwarte żródłowe | xf86-video-intel   | mesa                    | lib32-mesa                    |            |
-| AMD / ATI | otwarte żródłowe | xf86-video-ati     | mesa                    | lib32-mesa                    |            |
-| AMD / ATI | własnościowy     | xf86-video-amdgpu  | amdgpu-pro-libgl (aur)  | lib32-amdgpu-pro-libgl (aur)  |            |
-| NVIDIA    | otwarte żródłowe | xf86-video-nouveau | mesa                    | lib32-mesa                    |            |
-| NVIDIA    | własnościowy     | nvidia             | nvidia-utils            | lib32-nvidia-utils            |            |
+| Marka     |Typ               | Strerowniki        | OpenGL                  | OpenGL (multilib)             | 
+|-----------|------------------|--------------------|-------------------------|-------------------------------|
+| INTEL     | otwarte żródłowe | xf86-video-intel   | mesa                    | lib32-mesa                    |
+| AMD / ATI | otwarte żródłowe | xf86-video-ati     | mesa                    | lib32-mesa                    |        
+| AMD / ATI | własnościowy     | xf86-video-amdgpu  | amdgpu-pro-libgl (aur)  | lib32-amdgpu-pro-libgl (aur)  |
+| NVIDIA    | otwarte żródłowe | xf86-video-nouveau | mesa                    | lib32-mesa                    |        
+| NVIDIA    | własnościowy     | nvidia             | nvidia-utils            | lib32-nvidia-utils            | 
 | NVIDIA    | własnościowy     | nvidia-390xx (aur) | nvidia-380xx-utils (aur)| lib32-nvidia-390xx-utils (aur)|
 
 #### Środowisko pulpitu
 ##### Musisz wybrać środowisko graficzne
 ##### Instrukcje dotyczące plazmy KDE są testowane przeze mnie, ponieważ go używam. Inne powinny działać, ale może być potrzebne dodatkowe pakiety do produktywnego użytku (żądania ściągnięcia są mile widziane)
-
-PLASMA KDE
-XFCE
-GNOME
-CINNAMON
-DEEPIN
-MATE
   
   
+<details>
+<summary>Plasma</summary>
   
------
------
------
- 
-   więc proszę o cierpliwość
+```markdown
+# pacman -S plasma-desktop sddm
+```
   
-  System okien X, sterowniki Xorg, audio, sterowniki karty graficzne
+Menedżer wyświetlania SDDM
   
-  Środowiska graficzne
-  
-  niektóre kluczowe aplikacje
-  
------
------
------
-  
-  
-  
-  
-
-
+```markdown
+# systemctl enable sddm
+```
+</details>
 
