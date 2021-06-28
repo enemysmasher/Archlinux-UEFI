@@ -469,7 +469,7 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
 
 ###### [Do góry](#spis-treści)
 -----    
- #### 24. Wyjście z chroot
+#### 24. Wyjście z chroot
 ```markdown
 # exit
 ```
@@ -501,10 +501,9 @@ Jeśli w sieci Wi-Fi należy połączyć się z:
 ```markdown
 # nmtui
 ```
-  
+
 <img src="https://user-images.githubusercontent.com/43359077/122683344-d88dc480-d1fe-11eb-985f-7af41ad8d1de.png" alt="nmtui" width="1000"/> 
 
-  
 ###### [Do góry](#spis-treści)  
 ----- 
 #### 27. Dodaj użytkownika
