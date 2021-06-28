@@ -493,11 +493,11 @@ archtest login: root
 
 ###### [Do góry](#spis-treści) 
 -----
-#### 26. Sprawdź, czy internet wifi
+#### 26. Sprawdź, czy internet wifi należy połączyć się z:
 ```markdown
 # ip a
 ```
-Jeśli w sieci Wi-Fi należy połączyć się z:
+Jeśli w sieci Wi-Fi 
 ```markdown
 # nmtui
 ```
