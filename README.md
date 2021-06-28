@@ -131,8 +131,7 @@ root@archiso ~ # iwctl
 | ✔️        | /dev/sdXY | Partycja systemowa EFI | /mnt/efi      | 260-512MiB | -          |
 | ❌        | /dev/sdXY | Linux swap             | -             |            | -          |
 | ✔️        | /dev/sdXY | Linux                  | /mnt          |            | -          |
-| ❌        | /dev/sdXY | Linux                  | /mnt/home     |            | -          |
-  
+| ❌        | /dev/sdXY | Linux                  | /mnt/home     |            | -      
 ##### System EFI
 ##### Co najmniej: 260MiB
 ##### Zalecane   : 512MiB
@@ -170,7 +169,7 @@ root@archiso ~ # iwctl
 ##### Wpisz rozmiar partycji w MB (512MiB) i naciśnij klawisz Enter
 <img src="https://user-images.githubusercontent.com/43359077/122653139-0e6d7300-d143-11eb-83ea-e91632d6c3be.png" alt="efi" width="1000"/>
   
- ##### Wybierz opcję **Type** z dolnego menu i naciśnij klawisz Enter
+##### Wybierz opcję **Type** z dolnego menu i naciśnij klawisz Enter
 <img src="https://user-images.githubusercontent.com/43359077/122653197-673d0b80-d143-11eb-8301-de253d8b56ed.png" alt="type" width="1000"/>
 
 ##### wybierz typ partycji EFI System, jak pokazano na poniższych zrzutach ekranu.
@@ -245,7 +244,6 @@ root@archiso ~ # iwctl
 # pacstrap -i /mnt base base-devel bash-completion linux linux-firmware linux-headers nano dhcpcd
 ```
 ##### Dodałem Nano edytor, ponieważ trzeba edytować niektóre pliki po instalacji.
- 
 ##### Przy pytaniu, jakie pakiety zainstalować wcisnąć ENTER. Poczekaj chwilę, aż się zakończy.
 <img src="https://user-images.githubusercontent.com/43359077/122657138-120ff280-d161-11eb-9f33-8f4e144821d1.png" alt="pacstrap" width="1000"/>
 
@@ -351,8 +349,7 @@ KEYMAP=pl
 FONT=Lat2-Terminus16.psfu.gz
 FONT_MAP=8859-2
 ```
-zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
- 
+zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano) 
 ###### [Do góry](#spis-treści)
 ----- 
 #### 15. Ustaw nazwę hosta
@@ -385,7 +382,6 @@ zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
  <img src="https://user-images.githubusercontent.com/43359077/122670516-c9892100-d1c2-11eb-886b-4dc6d4501f73.png" alt="localhost" width="1000"/>
 
 zapisać **ctrl+O** (zapisuje), **ENTER** później **ctrl+X** (zamyka nano)
- 
 ###### [Do góry](#spis-treści)
 ----- 
 #### 17. Konfiguracja sieci
