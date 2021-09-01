@@ -681,7 +681,7 @@ Menedżer wyświetlania SDDM
 # systemctl enable sddm
 ```
 ```markdown
-# echo "exec startkde" > ~/.xinitrc
+# echo "exec startplasma-x11" > ~/.xinitrc
 ```
 ##### Jeśli chcesz zainstalować dodatki:
 ```markdown
