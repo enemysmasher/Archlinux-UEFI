@@ -579,7 +579,7 @@ zapisać ctrl+O -(zapisuje), ENTER później ctrl+X (zamyka nano)
 ##### Są to niektóre pakiety potrzebne do prawidłowego działania niektórych urządzeń wejściowych. Instalacja ich nie szkodzi, nawet jeśli ich nie potrzebujesz
 ##### Xorg to serwer wyświetlania, którego użyjemy
 ```markdown
-# pacman -S xorg xorg-xinit
+# pacman -S xorg xorg-xinit xterm
 ```
 ###### [Do góry](#spis-treści)
 -----
