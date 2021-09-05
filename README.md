@@ -121,7 +121,7 @@ root@archiso ~ # iwctl
 -----  
 #### 5. Partycjonuj dyski
 ##### W przypadku, gdy dysk twardy jest nowy, tak jak w przypadku maszyny wirtualnej lub chcesz ponownie podzielić dysk na partycje, uruchom to polecenie, aby utworzyć nową tablicę partycji.
-##### **cfdisk -z** to polecenie czyści tablice partycji, kasuje wszystko z dysku. Potem **cfdisk** i wybierasz **gpt**. Potem lecisz już z instalacją Archa.
+##### **cfdisk -z** to polecenie czyści tablice partycji, kasuje wszystko z dysku. Wybierasz **gpt**. Potem lecisz już z instalacją Archa.
 
 ##### **Przygotowanie dysku:**
 ##### GPT (UEFI)
