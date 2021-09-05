@@ -121,7 +121,7 @@ root@archiso ~ # iwctl
 -----  
 #### 5. Partycjonuj dyski
 ##### W przypadku, gdy dysk twardy jest nowy, tak jak w przypadku maszyny wirtualnej lub chcesz ponownie podzielić dysk na partycje, uruchom to polecenie, aby utworzyć nową tablicę partycji.
-##### **Wipefs** to polecenie czyści tablice partycji, kasuje wszystko z dysku. Potem **cfdisk** i wybierasz **gpt**. Potem lecisz już z instalacją Archa.
+##### **cfdisk -z** to polecenie czyści tablice partycji, kasuje wszystko z dysku. Potem **cfdisk** i wybierasz **gpt**. Potem lecisz już z instalacją Archa.
 
 ##### **Przygotowanie dysku:**
 ##### GPT (UEFI)
@@ -143,17 +143,12 @@ root@archiso ~ # iwctl
 ```
 <img src="https://user-images.githubusercontent.com/43359077/122652987-07923080-d142-11eb-8fc1-dff96c619032.png" alt="fdisk" width="1000"/>
 
-```markdown
-# wipefs -a /dev/sda 
-```
-<img src="https://user-images.githubusercontent.com/43359077/122655841-01a64a80-d156-11eb-9893-ae1868ffffd6.png" alt="wipefs" width="1000"/>
-
 ##### **Graficzny (zalecany dla początkujących)**
 ##### cfdisk – szybciej, wygodniej, lepiej?
 ###### Ja preferuje cfdisk - prosta i przejrzysta :hearts:
 
 ```markdown
-# cfdisk /dev/sda
+# cfdisk -z /dev/sda
 ```
 ##### Po uruchomieniu otrzymasz monit w ten sposób:
 ##### **Wybierz typ tabeli gpt**.
