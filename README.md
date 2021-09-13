@@ -262,11 +262,11 @@ root@archiso ~ # iwctl
 ----- 
 #### 9. Generowanie fstab
 ```markdown
-# genfstab -U -p /mnt >> /mnt/etc/fstab
+# genfstab -U /mnt >> /mnt/etc/fstab
 ```
 ##### oraz sprawdzenie czy jest poprawny.
 ```markdown
-# genfstab -U -p /mnt /mnt/etc/fstab
+# cat /mnt/etc/fstab  
 ```
 <img src="https://user-images.githubusercontent.com/43359077/122658126-e47b7700-d169-11eb-9f61-ed8d00e0d75e.png" alt="fstab" width="1000"/>
   
