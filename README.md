@@ -671,12 +671,18 @@ zapisać ctrl+O -(zapisuje), ENTER później ctrl+X (zamyka nano)
 ```markdown
 # pacman -S plasma-desktop sddm
 ```
-Menedżer wyświetlania SDDM
+Menedżer wyświetlania
 ```markdown
 # systemctl enable sddm
 ```
 ```markdown
 # echo "exec startplasma-x11" > ~/.xinitrc
+```
+##### Uruchom GUI
+##### Aby sprawdzić, czy środowisko graficzne działa, uruchom:
+  
+```markdown
+# startx
 ```
 ##### Jeśli chcesz zainstalować dodatki:
 ```markdown
@@ -688,11 +694,20 @@ Menedżer wyświetlania SDDM
 <summary>Gnome</summary>
 
 ```markdown
-# pacman -S 
+# pacman -S gnome gnome-extra gdm
 ``` 
 Menedżer wyświetlania
 ```markdown
-# systemctl enable
+# systemctl enable gdm
+```
+```markdown
+# echo "exec gnome-session" > ~/.xinitrc
+```
+##### Uruchom GUI
+##### Aby sprawdzić, czy środowisko graficzne działa, uruchom:
+  
+```markdown
+# startx
 ```
 </details>
   
@@ -700,11 +715,20 @@ Menedżer wyświetlania
 <summary>Mate</summary>
 
 ```markdown
-# pacman -S 
+# pacman -S mate lightdm lightdm-gtk-greeter
 ``` 
 Menedżer wyświetlania 
 ```markdown
-# systemctl enable 
+# systemctl enable lightdm 
+```
+```markdown
+# echo "exec mate-session" > ~/.xinitrc
+```
+##### Uruchom GUI
+##### Aby sprawdzić, czy środowisko graficzne działa, uruchom:
+  
+```markdown
+# startx
 ```
 </details>
   
@@ -712,11 +736,20 @@ Menedżer wyświetlania
 <summary>Xfce</summary>
 
 ```markdown
-# pacman -S 
+# pacman -S xfce4 xfce4-goodies lightdm lightdm-gtk-greeter 
 ``` 
 Menedżer wyświetlania 
 ```markdown
-# systemctl enable 
+# systemctl enable lightdm
+```
+```markdown
+# echo "exec xfce4-session" > ~/.xinitrc
+```
+##### Uruchom GUI
+##### Aby sprawdzić, czy środowisko graficzne działa, uruchom:
+  
+```markdown
+# startx
 ```
 </details>
 
@@ -724,11 +757,20 @@ Menedżer wyświetlania
 <summary>Cinnamon</summary>
 
 ```markdown
-# pacman -S pacman -S 
+# pacman -S pacman -S cinnamon cinnamon-translations lightdm lightdm-gtk-greeter
 ``` 
 Menedżer wyświetlania  
 ```markdown
-# systemctl enable 
+# systemctl enable lightdm
+```
+```markdown
+# echo "cinnamon-session" > ~/.xinitrc
+```
+##### Uruchom GUI
+##### Aby sprawdzić, czy środowisko graficzne działa, uruchom:
+  
+```markdown
+# startx
 ```
 </details>
   
@@ -736,11 +778,20 @@ Menedżer wyświetlania
 <summary>Enlightenment</summary>
 
 ```markdown
-# pacman -S pacman -S 
+# pacman -S pacman -S enlightenment efl lightdm lightdm-gtk-greeter
 ``` 
 Menedżer wyświetlania  
 ```markdown
-# systemctl enable 
+# systemctl enable lightdm
+```
+```markdown
+# echo "enlightenment_start" > ~/.xinitrc
+```
+##### Uruchom GUI
+##### Aby sprawdzić, czy środowisko graficzne działa, uruchom:
+  
+```markdown
+# startx
 ```
 </details>
   
@@ -754,17 +805,33 @@ Menedżer wyświetlania
 ```markdown
 # systemctl enable 
 ```
+```markdown
+# echo "" > ~/.xinitrc
+```
+##### Uruchom GUI
+##### Aby sprawdzić, czy środowisko graficzne działa, uruchom:
+```markdown
+# startx
+```
 </details>
   
 <details>
-<summary>Budgie</summary>
+<summary>Openbox</summary>
 
 ```markdown
-# pacman -S pacman -S 
+# pacman -S pacman -S openbox lightdm lightdm-gtk-greeter
 ``` 
 Menedżer wyświetlania  
 ```markdown
-# systemctl enable 
+# systemctl enable lightdm
+```
+```markdown
+# echo "exec openbox-session" > ~/.xinitrc
+```
+##### Uruchom GUI
+##### Aby sprawdzić, czy środowisko graficzne działa, uruchom:
+```markdown
+# startx
 ```
 </details>
   
