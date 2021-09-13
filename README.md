@@ -234,13 +234,28 @@ root@archiso ~ # iwctl
 -----
 #### 8. Instalacja systemu podstawowego
 ##### Teraz rozpoczynamy proces instalacji.
+##### Instalacja nowego jądra linux, linux-hardened, linux-lts, linux-zen ...
 ##### Pobranie pakietów i instalacja systemu mieści się w jednej komendzie:
+#### Masz do wyboru cztery sposoby
+##### Stable Linux Kernel
 ```markdown
-# pacstrap -i /mnt base base-devel bash-completion linux linux-firmware linux-headers nano dhcpcd
+# pacstrap -i /mnt base base-devel bash-completion linux linux-headers linux-firmware nano dhcpcd
+```
+##### Hardened Kernel
+```markdown
+# pacstrap -i /mnt base base-devel bash-completion linux-hardened linux-hardened-headers linux-firmware nano dhcpcd
+```
+##### Longterm (LTS) Kernel
+```markdown
+# pacstrap -i /mnt base base-devel bash-completion linux-lts linux-lts-headers linux-firmware nano dhcpcd
+```
+##### Zen Kernel
+```markdown
+# pacstrap -i /mnt base base-devel bash-completion linux-zen linux-zen-headers linux-firmware nano dhcpcd
 ```
 ##### Dodałem Nano edytor, ponieważ trzeba edytować niektóre pliki po instalacji.
 ##### Przy pytaniu, jakie pakiety zainstalować wcisnąć ENTER. Poczekaj chwilę, aż się zakończy.
-<img src="https://user-images.githubusercontent.com/43359077/122657138-120ff280-d161-11eb-9f33-8f4e144821d1.png" alt="pacstrap" width="1000"/>
+<img src="https://user-images.githubusercontent.com/43359077/122657333-eee64280-d162-11eb-87c6-640034a5877f.png" alt="pacstrap" width="800"/>
 
 ##### To zajmie trochę czasu, aby pobrać i zainstalować te pakiety. Jeśli pliki do pobrania zostanie przerwane, nie trzeba panikować. Możesz uruchomić powyższe polecenie jeszcze raz i wznowić pobieranie.
 ###### [Do góry](#spis-treści)
